@@ -1,0 +1,26 @@
+import childProcess from "node:child_process";
+
+import { expect, it, vi } from "vitest";
+
+import { showHelp } from "../../src/utils/show-help.js";
+
+const cliOptions = ["-h", "--help"];
+const expectedOutput = `Checks validity of Schema.org vocabulary
+
+Usage:
+  schemata-validator [flags]
+
+Options
+  -f, --files    Files to validate                    [array]
+  -p, --paths    Folders to include for validation    [array]
+  -e, --exclude  Paths to skip                        [array]
+  -d, --dry-run  Bypass validation                  [boolean]
+  -v, --version  Show version number                [boolean]
+  -h, --help     Show help                          [boolean]`;
+
+it.each(cliOptions)("should display the help content when using the `%s` command", option => {
+  const mockedConsoleLog = vi.spyOn(console, "log").mockImplementation(() => undefined);
+  vi.spyOn(childProcess, "execSync").mockReturnValue(`npx markup-validator ${option}`);
+  showHelp();
+  expect(mockedConsoleLog).toHaveBeenCalledWith(expectedOutput);
+});
