@@ -1,6 +1,6 @@
 {
   "name": "schemata-validator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Check the validity of Schema.org vocabulary used in JSON-LD data",
   "keywords": [
     "json-ld",
