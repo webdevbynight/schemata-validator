@@ -1,0 +1,62 @@
+{
+  "name": "schemata-validator",
+  "version": "0.0.0",
+  "description": "Check the validity of Schema.org vocabulary used in JSON-LD data",
+  "keywords": [
+    "json-ld",
+    "schema-org",
+    "web-semantic",
+    "validator"
+  ],
+  "homepage": "https://github.com/webdevbynight/schemata-validator",
+  "bugs": {
+    "url": "https://github.com/webdevbynight/schemata-validator/issues"
+  },
+  "author": "Victor Brito (https://victor-brito.dev)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevbynight/schemata-validator.git"
+  },
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "engines": {
+    "node": "^20.18.3 || ^22.12.0 || ^24.0.0",
+    "npm": ">=10.8.2",
+    "pnpm": ">=10.32.1"
+  },
+  "scripts": {
+    "biome": "biome check --write .",
+    "biome:check": "biome check .",
+    "biome:format": "biome format --write .",
+    "biome:format:check": "biome format .",
+    "biome:lint": "biome lint --write .",
+    "biome:lint:check": "biome lint .",
+    "build": "tsc",
+    "dev": "pnpm tsc:watch & pnpm test:watch",
+    "prepare": "husky",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "tsc:watch": "tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.8",
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
+    "husky": "9.1.7",
+    "typescript": "5.9.3",
+    "vitest": "4.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild"
+    ]
+  }
+}
