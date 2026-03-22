@@ -72,6 +72,18 @@ it("should call the schema graph validation when `files` option is set", async (
   expect(SchemaGraphValidator).toHaveBeenCalled();
   expect(prepareReporting).toHaveBeenCalled();
 });
+it("should return as many reports as there are files to validate and no options set", async () => {
+  vi.spyOn(fs, "readFileSync").mockReturnValue('{"@context":"https://schema.org"}');
+  vi.mocked(getFilesToValidate).mockResolvedValue(["/fake/path/index.html"]);
+  const schemataValidator = new SchemataValidator();
+  expect(await schemataValidator.validate()).toHaveLength(1);
+});
+it("should return as many reports as there are files and when `files` option is set", async () => {
+  vi.spyOn(fs, "readFileSync").mockReturnValue('{"@context":"https://schema.org"}');
+  vi.mocked(getFilesToValidate).mockResolvedValue(["/fake/path/selected.html"]);
+  const schemataValidator = new SchemataValidator({ files: ["selected.html"] });
+  expect(await schemataValidator.validate()).toHaveLength(1);
+});
 it("should call `displayReporting` when `log` method is called", async () => {
   vi.spyOn(fs, "readFileSync").mockReturnValue('{"@context":"https://schema.org"}');
   vi.mocked(getFilesToValidate).mockResolvedValue(["/fake/path/index.html"]);
