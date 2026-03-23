@@ -7,7 +7,7 @@ import { mockedHtmlFilesWithInvalidJSONLDData } from "./fixtures/mocked-html-fil
 it.each(
   mockedHtmlFilesWithInvalidJSONLDData
 )("should throw an error if the HTML file has invalid JSON-LD data", input => {
-  expect(() => new HTMLParser(input).parse()).toThrowError();
+  expect(() => new HTMLParser(input).parse()).toThrow();
 });
 it.each(mockedHTMLFiles)("should return the intermediate representation tree", ({
   input,

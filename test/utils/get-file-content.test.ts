@@ -9,7 +9,7 @@ it("should throw an error if a file does not exist", () => {
   vi.spyOn(fs, "readFileSync").mockImplementation(() => {
     throw new Error("ENOENT: no such file or directory, open '/fake/path/non-existing-file.html'");
   });
-  expect(() => getFileContent("/fake/path/non-existing-file.html")).toThrowError();
+  expect(() => getFileContent("/fake/path/non-existing-file.html")).toThrow();
 });
 it("should return the content of the file", () => {
   vi.spyOn(fs, "readFileSync").mockReturnValue("test content");
