@@ -14,8 +14,7 @@
     "types": ["node"],
     "lib": [
       "ES2023",
-      "DOM",
-      "DOM.Iterable"
+      "DOM"
     ],
     "module": "NodeNext",
     "sourceMap": true,
