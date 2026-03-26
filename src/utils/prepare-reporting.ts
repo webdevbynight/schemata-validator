@@ -12,7 +12,7 @@ export const prepareReporting = (
   resource: string,
   result: ValidationResult[]
 ): ValidationReporting => {
-  const reportedResource = resource.endsWith(".html")
+  const reportedResource = resource.match(/\.html?$/)
     ? resource.replace(`${cwd()}/`, "")
     : resource;
   if (result.length) {
