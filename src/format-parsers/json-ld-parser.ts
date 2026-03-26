@@ -60,7 +60,7 @@ export class JSONLDParser {
     const type = typeof node["@type"] === "string" ? node["@type"] : "Thing";
     const id = typeof node["@id"] === "string" ? node["@id"] : undefined;
     const schemaNode = id ? { type, id } : { type };
-    const properties = new Map();
+    const properties = new Map<string, SchemaValue[]>();
     for (const [key, rawValues] of Object.entries(node)) {
       if (key.startsWith("@")) continue;
       const propertyPath = `${nodePath}.${key}`;
