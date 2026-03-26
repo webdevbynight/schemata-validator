@@ -18,7 +18,7 @@ export class JSONLDParser {
    * @param parentPath - The JSON-LD path of the parent property.
    * @return The schema value.
    */
-  setSchemaValue = (value: unknown, index: number, parentPath: string): SchemaValue => {
+  private setSchemaValue = (value: unknown, index: number, parentPath: string): SchemaValue => {
     const parentPathWithIndex = `${parentPath}[${index}]`;
     if (typeof value === "object" && value !== null) {
       if ("@value" in value) {
@@ -55,12 +55,12 @@ export class JSONLDParser {
    * @param [parentPath] - The JSON-LD path of the parent property (the string is empty for root nodes).
    * @return The schema node.
    */
-  setSchemaNode = (node: JSONLDData, index: number, parentPath = ""): SchemaNode => {
+  private setSchemaNode = (node: JSONLDData, index: number, parentPath = ""): SchemaNode => {
     const nodePath = `${parentPath}[${index}]`;
     const type = typeof node["@type"] === "string" ? node["@type"] : "Thing";
     const id = typeof node["@id"] === "string" ? node["@id"] : undefined;
     const schemaNode = id ? { type, id } : { type };
-    const properties = new Map();
+    const properties = new Map<string, SchemaValue[]>();
     for (const [key, rawValues] of Object.entries(node)) {
       if (key.startsWith("@")) continue;
       const propertyPath = `${nodePath}.${key}`;

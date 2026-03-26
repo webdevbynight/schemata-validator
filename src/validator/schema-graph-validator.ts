@@ -26,7 +26,7 @@ export class SchemaGraphValidator {
    * @param type - The type of the class.
    * @return The class definition if it exists, `null` otherwise.
    */
-  getClassDefinition(type: string): ClassDefinition | null {
+  private getClassDefinition(type: string): ClassDefinition | null {
     if (type in classes) return classes[type as keyof typeof classes];
     return null;
   }
@@ -38,7 +38,7 @@ export class SchemaGraphValidator {
    * @param property - The property.
    * @return The property definition if it exists, `null` otherwise.
    */
-  getPropertyDefinition(property: string): PropertyDefinition | null {
+  private getPropertyDefinition(property: string): PropertyDefinition | null {
     if (property === "id") return { isPending: false };
     if (property in properties) return properties[property as keyof typeof properties];
     return null;
@@ -76,7 +76,7 @@ export class SchemaGraphValidator {
    * @param schemaValues - The schema values to validate.
    * @return An array of validation reports.
    */
-  validateValues(property: string, schemaValues: SchemaValue[]): ValidationResult[] {
+  private validateValues(property: string, schemaValues: SchemaValue[]): ValidationResult[] {
     const result: ValidationResult[] = [];
     const propertyDefinition = this.getPropertyDefinition(property);
     for (const schemaValue of schemaValues) {
@@ -131,7 +131,7 @@ export class SchemaGraphValidator {
    * @param node - The schema node to validate.
    * @return An array of validation reports.
    */
-  validateNode(node: SchemaNode): ValidationResult[] {
+  private validateNode(node: SchemaNode): ValidationResult[] {
     const {
       type,
       location: { jsonLDPath },
