@@ -20,7 +20,7 @@ export class JSONLDParser {
    * @param parentPath - The JSON-LD path of the parent property.
    * @return The schema value.
    */
-  private setSchemaValue = (value: unknown, index: number, parentPath: string): SchemaValue => {
+  private setSchemaValue(value: unknown, index: number, parentPath: string): SchemaValue {
     const parentPathWithIndex = `${parentPath}[${index}]`;
     if (typeof value === "object" && value !== null) {
       if ("@value" in value) {
@@ -48,7 +48,7 @@ export class JSONLDParser {
       },
       value: String(value)
     };
-  };
+  }
 
   /**
    * Sets the schema node.
@@ -57,7 +57,7 @@ export class JSONLDParser {
    * @param [parentPath] - The JSON-LD path of the parent property (the string is empty for root nodes).
    * @return The schema node.
    */
-  private setSchemaNode = (node: JSONLDData, index: number, parentPath = ""): SchemaNode => {
+  private setSchemaNode(node: JSONLDData, index: number, parentPath = ""): SchemaNode {
     const nodePath = `${parentPath}[${index}]`;
     const type = typeof node["@type"] === "string" ? node["@type"] : "Thing";
     const id = typeof node["@id"] === "string" ? node["@id"] : undefined;
@@ -79,7 +79,7 @@ export class JSONLDParser {
         jsonLDPath: nodePath
       }
     };
-  };
+  }
 
   /**
    * Parses the JSON-LD data.
