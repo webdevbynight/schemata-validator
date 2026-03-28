@@ -1,5 +1,15 @@
 # schemata-validator
 
+## 0.3.0
+
+### Minor changes
+
+- update data with Schema.org v30 (#15) ([`ca4fedf`](https://github.com/webdevbynight/schemata-validator/commit/ca4fedfb59f65ccd94740de9afcf046071fe0370))
+
+---
+
+**Full changelog:** [`v0.2.0...v0.3.0`](https://github.com/webdevbynight/schemata-validator/compare/v0.2.0...v0.3.0)
+
 ## 0.2.0
 
 ### Minor changes
