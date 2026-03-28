@@ -1,5 +1,15 @@
 # schemata-validator
 
+## 0.2.0
+
+### Minor changes
+
+- implement microdata validation ([`b2c6cd7`](https://github.com/webdevbynight/schemata-validator/commit/b2c6cd78220d1bf5bdf0df121d3be357d9cb1f28))
+
+---
+
+**Full changelog:** [`v0.1.0...v0.2.0`](https://github.com/webdevbynight/schemata-validator/compare/v0.1.0...v0.2.0)
+
 ## 0.1.0
 
 ### Minor changes
