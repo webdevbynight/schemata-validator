@@ -245,5 +245,222 @@ export const mockedValidSchemaGraphs: SchemaGraph[] = [
         ])
       }
     ]
+  },
+  {
+    roots: [
+      {
+        type: "BreadcrumbList",
+        sourceFormat: "microdata",
+        location: {
+          startLine: 8,
+          startColumn: 36
+        },
+        properties: new Map([
+          [
+            "itemListElement",
+            [
+              {
+                kind: "node",
+                linkLocation: {
+                  startLine: 10,
+                  startColumn: 13
+                },
+                node: {
+                  type: "ListItem",
+                  sourceFormat: "microdata",
+                  location: {
+                    startLine: 10,
+                    startColumn: 50
+                  },
+                  properties: new Map([
+                    [
+                      "item",
+                      [
+                        {
+                          kind: "node",
+                          linkLocation: {
+                            startLine: 11,
+                            startColumn: 37
+                          },
+                          node: {
+                            type: "Thing",
+                            id: "https://example.com/category-1.html",
+                            sourceFormat: "microdata",
+                            location: {
+                              startLine: 11,
+                              startColumn: 37
+                            },
+                            properties: new Map([
+                              [
+                                "name",
+                                [
+                                  {
+                                    kind: "literal",
+                                    location: {
+                                      startLine: 11,
+                                      startColumn: 59
+                                    },
+                                    value: "Category 1"
+                                  }
+                                ]
+                              ]
+                            ])
+                          }
+                        }
+                      ]
+                    ],
+                    [
+                      "position",
+                      [
+                        {
+                          kind: "literal",
+                          location: {
+                            startLine: 12,
+                            startColumn: 17
+                          },
+                          value: "1"
+                        }
+                      ]
+                    ]
+                  ])
+                }
+              },
+              {
+                kind: "node",
+                linkLocation: {
+                  startLine: 14,
+                  startColumn: 13
+                },
+                node: {
+                  type: "ListItem",
+                  sourceFormat: "microdata",
+                  location: {
+                    startLine: 14,
+                    startColumn: 50
+                  },
+                  properties: new Map([
+                    [
+                      "item",
+                      [
+                        {
+                          kind: "node",
+                          linkLocation: {
+                            startLine: 15,
+                            startColumn: 37
+                          },
+                          node: {
+                            type: "Thing",
+                            id: "https://example.com/category-2.html",
+                            sourceFormat: "microdata",
+                            location: {
+                              startLine: 15,
+                              startColumn: 37
+                            },
+                            properties: new Map([
+                              [
+                                "name",
+                                [
+                                  {
+                                    kind: "literal",
+                                    location: {
+                                      startLine: 15,
+                                      startColumn: 59
+                                    },
+                                    value: "Category 2"
+                                  }
+                                ]
+                              ]
+                            ])
+                          }
+                        }
+                      ]
+                    ],
+                    [
+                      "position",
+                      [
+                        {
+                          kind: "literal",
+                          location: {
+                            startLine: 16,
+                            startColumn: 17
+                          },
+                          value: "2"
+                        }
+                      ]
+                    ]
+                  ])
+                }
+              },
+              {
+                kind: "node",
+                linkLocation: {
+                  startLine: 18,
+                  startColumn: 13
+                },
+                node: {
+                  type: "ListItem",
+                  sourceFormat: "microdata",
+                  location: {
+                    startLine: 18,
+                    startColumn: 50
+                  },
+                  properties: new Map([
+                    [
+                      "item",
+                      [
+                        {
+                          kind: "node",
+                          linkLocation: {
+                            startLine: 19,
+                            startColumn: 37
+                          },
+                          node: {
+                            type: "Thing",
+                            id: "https://example.com/category-3.html",
+                            sourceFormat: "microdata",
+                            location: {
+                              startLine: 19,
+                              startColumn: 37
+                            },
+                            properties: new Map([
+                              [
+                                "name",
+                                [
+                                  {
+                                    kind: "literal",
+                                    location: {
+                                      startLine: 19,
+                                      startColumn: 59
+                                    },
+                                    value: "Category 3"
+                                  }
+                                ]
+                              ]
+                            ])
+                          }
+                        }
+                      ]
+                    ],
+                    [
+                      "position",
+                      [
+                        {
+                          kind: "literal",
+                          location: {
+                            startLine: 20,
+                            startColumn: 17
+                          },
+                          value: "3"
+                        }
+                      ]
+                    ]
+                  ])
+                }
+              }
+            ]
+          ]
+        ])
+      }
+    ]
   }
 ];
