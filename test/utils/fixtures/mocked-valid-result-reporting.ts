@@ -6,7 +6,8 @@ export const mockedValidResultReporting: {
   reporting: ValidationReporting;
   logs?: {
     message: string;
-    path: string;
+    path?: string;
+    location?: string;
   }[];
 }[] = [
   {
@@ -74,6 +75,86 @@ export const mockedValidResultReporting: {
         message:
           "The property `diversityPolicy` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution.",
         path: "[0].diversityPolicy[0]"
+      }
+    ]
+  },
+  {
+    resource: "valid.html",
+    result: [],
+    reporting: {
+      resource: "valid.html",
+      status: "pass"
+    }
+  },
+  {
+    resource: "valid.html",
+    result: [
+      {
+        type: "warning",
+        location: {
+          line: 8,
+          column: 24
+        },
+        message:
+          "The type `AnalysisNewsArticle` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+      }
+    ],
+    reporting: {
+      resource: "valid.html",
+      status: "pass",
+      result: [
+        {
+          type: "warning",
+          location: {
+            line: 8,
+            column: 24
+          },
+          message:
+            "The type `AnalysisNewsArticle` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+        }
+      ]
+    },
+    logs: [
+      {
+        message:
+          "The type `AnalysisNewsArticle` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution.",
+        location: "line 8, column 24"
+      }
+    ]
+  },
+  {
+    resource: "valid.html",
+    result: [
+      {
+        type: "warning",
+        location: {
+          line: 10,
+          column: 38
+        },
+        message:
+          "The property `diversityPolicy` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+      }
+    ],
+    reporting: {
+      resource: "valid.html",
+      status: "pass",
+      result: [
+        {
+          type: "warning",
+          location: {
+            line: 10,
+            column: 38
+          },
+          message:
+            "The property `diversityPolicy` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+        }
+      ]
+    },
+    logs: [
+      {
+        message:
+          "The property `diversityPolicy` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution.",
+        path: "line 10, column 38"
       }
     ]
   }

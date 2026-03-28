@@ -81,23 +81,28 @@ export class SchemaGraphValidator {
     const propertyDefinition = this.getPropertyDefinition(property);
     for (const schemaValue of schemaValues) {
       const { kind } = schemaValue;
-      const jsonLDPath =
-        kind === "node" ? schemaValue.linkLocation.jsonLDPath : schemaValue.location.jsonLDPath;
+      const location = kind === "node" ? schemaValue.linkLocation : schemaValue.location;
+      const { jsonLDPath, startLine: line, startColumn: column } = location;
+      const htmlLocation = line && column ? { line, column } : undefined;
       if (propertyDefinition) {
         const { isPending, supersededBy } = propertyDefinition;
         if (supersededBy) {
-          result.push({
+          const validationResult: ValidationResult = {
             type: "error",
-            path: jsonLDPath ?? "",
             message: `The property \`${property}\` has been superseded: use \`${supersededBy}\` instead.`
-          });
+          };
+          if (jsonLDPath) validationResult.path = jsonLDPath;
+          if (htmlLocation) validationResult.location = htmlLocation;
+          result.push(validationResult);
         }
         if (isPending) {
-          result.push({
+          const validationResult: ValidationResult = {
             type: "warning",
-            path: jsonLDPath ?? "",
             message: `The property \`${property}\` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution.`
-          });
+          };
+          if (jsonLDPath) validationResult.path = jsonLDPath;
+          if (htmlLocation) validationResult.location = htmlLocation;
+          result.push(validationResult);
         }
         if (kind === "node") {
           const { node } = schemaValue;
@@ -107,20 +112,24 @@ export class SchemaGraphValidator {
             typesInPropertyDefinition?.includes(className)
           );
           if (!typesInPropertyDefinition?.includes(type) && !extendsTypes) {
-            result.push({
+            const validationResult: ValidationResult = {
               type: "error",
-              path: jsonLDPath ?? "",
               message: `\`${type}\` is not a valid type for the property \`${property}\`.`
-            });
+            };
+            if (jsonLDPath) validationResult.path = jsonLDPath;
+            if (htmlLocation) validationResult.location = htmlLocation;
+            result.push(validationResult);
           }
           result.push(...this.validateNode(node));
         }
       } else {
-        result.push({
+        const validationResult: ValidationResult = {
           type: "error",
-          path: jsonLDPath ?? "",
           message: `The property \`${property}\` does not exist in the Schema.org vocabulary.`
-        });
+        };
+        if (jsonLDPath) validationResult.path = jsonLDPath;
+        if (htmlLocation) validationResult.location = htmlLocation;
+        result.push(validationResult);
       }
     }
     return result;
@@ -134,7 +143,7 @@ export class SchemaGraphValidator {
   private validateNode(node: SchemaNode): ValidationResult[] {
     const {
       type,
-      location: { jsonLDPath },
+      location: { jsonLDPath, startLine: line, startColumn: column },
       properties
     } = node;
     const result: ValidationResult[] = [];
@@ -142,28 +151,34 @@ export class SchemaGraphValidator {
     if (classDefinition) {
       const { isPending, supersededBy } = classDefinition;
       if (supersededBy) {
-        result.push({
+        const validationResult: ValidationResult = {
           type: "error",
-          path: jsonLDPath ?? "",
           message: `The type \`${type}\` has been superseded: use \`${supersededBy}\` instead.`
-        });
+        };
+        if (jsonLDPath) validationResult.path = jsonLDPath;
+        if (line && column) validationResult.location = { line, column };
+        result.push(validationResult);
       }
       if (isPending) {
-        result.push({
+        const validationResult: ValidationResult = {
           type: "warning",
-          path: jsonLDPath ?? "",
           message: `The type \`${type}\` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution.`
-        });
+        };
+        if (jsonLDPath) validationResult.path = jsonLDPath;
+        if (line && column) validationResult.location = { line, column };
+        result.push(validationResult);
       }
       for (const [property, schemaValues] of properties) {
         result.push(...this.validateValues(property, schemaValues));
       }
     } else {
-      result.push({
+      const validationResult: ValidationResult = {
         type: "error",
-        path: jsonLDPath ?? "",
         message: `The type \`${type}\` does not exist in the Schema.org vocabulary.`
-      });
+      };
+      if (jsonLDPath) validationResult.path = jsonLDPath;
+      if (line && column) validationResult.location = { line, column };
+      result.push(validationResult);
     }
     return result;
   }

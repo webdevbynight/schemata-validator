@@ -8,6 +8,8 @@ export type SchemataValidatorOptions = {
 export type JSONLDData = Record<string, unknown>;
 type SourceLocation = {
   jsonLDPath?: string;
+  startLine?: number;
+  startColumn?: number;
 };
 type LiteralSchemaValue = {
   kind: "literal";
@@ -41,8 +43,12 @@ export interface PropertyDefinition extends ClassDefinition {
 }
 export type ValidationResult = {
   type: "error" | "warning";
-  path: string;
   message: string;
+  path?: string;
+  location?: {
+    line: number;
+    column: number;
+  };
 };
 interface ValidationReportingCommonProperties {
   resource: string;

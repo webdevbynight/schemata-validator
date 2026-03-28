@@ -29,11 +29,15 @@ export const displayReporting = (reporting: ValidationReporting, timestamp: numb
   }
   if (result) {
     for (const reportingMessage of result) {
-      const { type, path, message } = reportingMessage;
+      const { type, message, path, location } = reportingMessage;
       if (type === "error") {
         console.error("\x1b[1;31mError:\x1b[0m", message);
       } else console.warn("\x1b[1;33mWarning:\x1b[0m", message);
-      console.info(path);
+      if (path) console.info(path);
+      if (location) {
+        const { line, column } = location;
+        console.info(`line ${line}, column ${column}`);
+      }
     }
   }
   console.groupEnd();

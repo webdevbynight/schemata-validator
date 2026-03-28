@@ -41,9 +41,10 @@ describe.each(times)("at $expectedTime (timestamp $mockedTimestamp)", ({
     expect(consoleGroupEndSpy).toHaveBeenCalled();
     if (reporting.result && logs) {
       for (const log of logs) {
-        const { message, path } = log;
+        const { message, path, location } = log;
         expect(consoleWarnSpy).toHaveBeenCalledWith("\x1b[1;33mWarning:\x1b[0m", message);
-        expect(consoleInfoSpy).toHaveBeenCalledWith(path);
+        if (path) expect(consoleInfoSpy).toHaveBeenCalledWith(path);
+        if (location) expect(consoleInfoSpy).toHaveBeenCalledWith(location);
       }
     } else expect(consoleWarnSpy).not.toHaveBeenCalled();
     expect(consoleErrorSpy).not.toHaveBeenCalled();
@@ -60,13 +61,14 @@ describe.each(times)("at $expectedTime (timestamp $mockedTimestamp)", ({
       `(messages: ${reporting.result?.length})`
     );
     for (const log of logs) {
-      const { level, message, path } = log;
+      const { level, message, path, location } = log;
       if (level === "Error") {
         expect(consoleErrorSpy).toHaveBeenCalledWith(`\x1b[1;31m${level}:\x1b[0m`, message);
       } else {
         expect(consoleWarnSpy).toHaveBeenCalledWith(`\x1b[1;33m${level}:\x1b[0m`, message);
       }
-      expect(consoleInfoSpy).toHaveBeenCalledWith(path);
+      if (path) expect(consoleInfoSpy).toHaveBeenCalledWith(path);
+      if (location) expect(consoleInfoSpy).toHaveBeenCalledWith(location);
     }
     expect(consoleGroupEndSpy).toHaveBeenCalled();
   });
