@@ -1,27 +1,3330 @@
 {
-  "Conversation": {
+  "AutoBodyShop": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "CafeOrCoffeeShop": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "InstallAction": {
+    "isPending": false,
+    "extends": ["ConsumeAction"]
+  },
+  "LandmarksOrHistoricalBuildings": {
+    "isPending": false,
+    "extends": ["Place"]
+  },
+  "Mass": {
+    "isPending": false,
+    "extends": ["Quantity"]
+  },
+  "TaxiService": {
+    "isPending": false,
+    "extends": ["Service"]
+  },
+  "PronounceableText": {
+    "isPending": true,
+    "extends": ["Text"]
+  },
+  "AutoRepair": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "PlaceOfWorship": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "SizeSystemEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "AuthenticateAction": {
+    "isPending": true,
+    "extends": ["ControlAction"]
+  },
+  "ShippingConditions": {
+    "isPending": true,
+    "extends": ["StructuredValue"]
+  },
+  "EducationalOccupationalCredential": {
+    "isPending": true,
+    "extends": ["Credential"]
+  },
+  "Certification": {
+    "isPending": true,
+    "extends": ["fibo-fnd-arr-doc:Certificate", "CreativeWork"]
+  },
+  "TrainStation": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Quantity": {
+    "isPending": false
+  },
+  "MenuSection": {
     "isPending": false,
     "extends": ["CreativeWork"]
+  },
+  "InfectiousAgentClass": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "Country": {
+    "isPending": false,
+    "extends": ["AdministrativeArea", "cmns-ge:GeopoliticalEntity"]
+  },
+  "SportsActivityLocation": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "BoatReservation": {
+    "isPending": true,
+    "extends": ["Reservation"]
+  },
+  "PhysicalActivity": {
+    "isPending": false,
+    "extends": ["LifestyleModification"]
+  },
+  "CityHall": {
+    "isPending": false,
+    "extends": ["GovernmentBuilding"]
+  },
+  "FMRadioChannel": {
+    "isPending": false,
+    "extends": ["RadioChannel"]
+  },
+  "Brand": {
+    "isPending": false,
+    "extends": ["Intangible", "cmns-cls:Classifier"]
+  },
+  "OfferForPurchase": {
+    "isPending": true,
+    "extends": ["Offer"]
+  },
+  "Library": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "ExercisePlan": {
+    "isPending": false,
+    "extends": ["PhysicalActivity", "CreativeWork"]
+  },
+  "Grant": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "Atlas": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "WebApplication": {
+    "isPending": false,
+    "extends": ["SoftwareApplication"]
+  },
+  "ItemAvailability": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "Audience": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Mosque": {
+    "isPending": false,
+    "extends": ["PlaceOfWorship"]
+  },
+  "Language": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "PodcastSeries": {
+    "isPending": true,
+    "extends": ["CreativeWorkSeries"]
+  },
+  "PerformanceRole": {
+    "isPending": false,
+    "extends": ["Role"]
+  },
+  "HowToStep": {
+    "isPending": false,
+    "extends": ["ListItem", "CreativeWork", "ItemList"]
+  },
+  "VoteAction": {
+    "isPending": false,
+    "extends": ["ChooseAction"]
+  },
+  "Legislation": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "FinancialIncentive": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "BodyMeasurementTypeEnumeration": {
+    "isPending": true,
+    "extends": ["MeasurementTypeEnumeration"]
+  },
+  "Synagogue": {
+    "isPending": false,
+    "extends": ["PlaceOfWorship"]
+  },
+  "SequentialArt": {
+    "isPending": false,
+    "extends": ["Book", "VisualArtwork"]
+  },
+  "CDCPMDRecord": {
+    "isPending": true,
+    "extends": ["StructuredValue"]
+  },
+  "UserBlocks": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "UserReview": {
+    "isPending": true,
+    "extends": ["Review"]
+  },
+  "TVSeason": {
+    "isPending": false,
+    "extends": ["CreativeWork", "CreativeWorkSeason"]
+  },
+  "CheckoutPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "Photograph": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "HighSchool": {
+    "isPending": false,
+    "extends": ["EducationalOrganization"]
+  },
+  "WantAction": {
+    "isPending": false,
+    "extends": ["ReactAction"]
+  },
+  "PathologyTest": {
+    "isPending": false,
+    "extends": ["MedicalTest"]
+  },
+  "ArriveAction": {
+    "isPending": false,
+    "extends": ["MoveAction"]
+  },
+  "SportsTeam": {
+    "isPending": false,
+    "extends": ["SportsOrganization"]
+  },
+  "ComicSeries": {
+    "isPending": false,
+    "extends": ["Periodical"]
+  },
+  "PostalCodeRangeSpecification": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "BloodTest": {
+    "isPending": false,
+    "extends": ["MedicalTest"]
+  },
+  "Zoo": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "InsertAction": {
+    "isPending": false,
+    "extends": ["AddAction"]
+  },
+  "SoftwareSourceCode": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "AutoWash": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "ImageObjectSnapshot": {
+    "isPending": true,
+    "extends": ["ImageObject"]
+  },
+  "Hackathon": {
+    "isPending": true,
+    "extends": ["Event"]
+  },
+  "CommunicateAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
+  },
+  "Answer": {
+    "isPending": false,
+    "extends": ["Comment"]
+  },
+  "DigitalPlatformEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "JewelryStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "OnDemandEvent": {
+    "isPending": false,
+    "extends": ["PublicationEvent"]
+  },
+  "HinduTemple": {
+    "isPending": false,
+    "extends": ["PlaceOfWorship"]
+  },
+  "MedicalGuideline": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "Corporation": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "Product": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "BowlingAlley": {
+    "isPending": false,
+    "extends": ["SportsActivityLocation"]
   },
   "TheaterEvent": {
     "isPending": false,
     "extends": ["Event"]
   },
-  "WatchAction": {
+  "MedicalSign": {
+    "isPending": false,
+    "extends": ["MedicalSignOrSymptom"]
+  },
+  "Hospital": {
+    "isPending": false,
+    "extends": ["CivicStructure", "EmergencyService", "MedicalOrganization"]
+  },
+  "InternetCafe": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "Residence": {
+    "isPending": false,
+    "extends": ["Place"]
+  },
+  "Trip": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "PerformingArtsEvent": {
+    "isPending": true,
+    "extends": ["Event"]
+  },
+  "Mountain": {
+    "isPending": false,
+    "extends": ["Landform"]
+  },
+  "DrinkAction": {
     "isPending": false,
     "extends": ["ConsumeAction"]
   },
-  "AnalysisNewsArticle": {
+  "BusinessEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "RiverBodyOfWater": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "LegislationObject": {
     "isPending": true,
-    "extends": ["NewsArticle"]
+    "extends": ["Legislation", "MediaObject"]
+  },
+  "LegislativeBuilding": {
+    "isPending": false,
+    "extends": ["GovernmentBuilding"]
+  },
+  "UserPageVisits": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "ReservationPackage": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "BedAndBreakfast": {
+    "isPending": false,
+    "extends": ["LodgingBusiness"]
+  },
+  "LeaveAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
+  },
+  "Statement": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "MedicalEnumeration": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "FundingScheme": {
+    "isPending": true,
+    "extends": ["Organization"]
+  },
+  "CreativeWorkSeason": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Sculpture": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "LiquorStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "PresentationDigitalDocument": {
+    "isPending": false,
+    "extends": ["DigitalDocument"]
+  },
+  "Invoice": {
+    "isPending": false,
+    "extends": ["fibo-fnd-arr-doc:LegalDocument", "Intangible"]
+  },
+  "PreventionIndication": {
+    "isPending": false,
+    "extends": ["MedicalIndication"]
+  },
+  "DrugCost": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "PublicSwimmingPool": {
+    "isPending": false,
+    "extends": ["SportsActivityLocation"]
+  },
+  "AppendAction": {
+    "isPending": false,
+    "extends": ["InsertAction"]
+  },
+  "SpeakableSpecification": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "SearchResultsPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "ServiceChannel": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Distillery": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "PhysicalActivityCategory": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "Map": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Taxon": {
+    "isPending": true,
+    "extends": ["Thing"]
+  },
+  "TelevisionChannel": {
+    "isPending": false,
+    "extends": ["BroadcastChannel"]
+  },
+  "MotorcycleRepair": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "MeasurementTypeEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "GovernmentBuilding": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "QuantitativeValue": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "WebPage": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Error": {
+    "isPending": true,
+    "extends": ["sarif:Result", "InstantaneousEvent"]
+  },
+  "MedicalDevice": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "DrugClass": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "StupidType": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "Class": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "HowToTip": {
+    "isPending": false,
+    "extends": ["CreativeWork", "ListItem"]
+  },
+  "CorrectionComment": {
+    "isPending": true,
+    "extends": ["Comment"]
+  },
+  "Brewery": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "IncentiveStatus": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "AutomatedTeller": {
+    "isPending": false,
+    "extends": ["FinancialService"]
+  },
+  "OutletStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "TennisComplex": {
+    "isPending": false,
+    "extends": ["SportsActivityLocation"]
+  },
+  "MediaReview": {
+    "isPending": true,
+    "extends": ["Review"]
+  },
+  "Dentist": {
+    "isPending": false,
+    "extends": ["MedicalBusiness", "MedicalOrganization", "LocalBusiness"]
+  },
+  "CollectionPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "MedicalRiskFactor": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "AllocateAction": {
+    "isPending": false,
+    "extends": ["OrganizeAction"]
+  },
+  "Store": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "MedicalAudience": {
+    "isPending": false,
+    "extends": ["Audience", "PeopleAudience"]
+  },
+  "NightClub": {
+    "isPending": false,
+    "extends": ["EntertainmentBusiness"]
+  },
+  "WearableSizeGroupEnumeration": {
+    "isPending": true,
+    "extends": ["SizeGroupEnumeration"]
+  },
+  "FollowAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
   },
   "Room": {
     "isPending": false,
     "extends": ["Accommodation"]
   },
-  "WearableSizeGroupEnumeration": {
+  "ShippingDeliveryTime": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "PublicToilet": {
     "isPending": true,
-    "extends": ["SizeGroupEnumeration"]
+    "extends": ["CivicStructure"]
+  },
+  "DatedMoneySpecification": {
+    "isPending": false,
+    "extends": ["StructuredValue"],
+    "supersededBy": "MonetaryAmount"
+  },
+  "VideoGame": {
+    "isPending": false,
+    "extends": ["SoftwareApplication", "Game"]
+  },
+  "ScreeningEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "ControlAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "Vessel": {
+    "isPending": false,
+    "extends": ["AnatomicalStructure"]
+  },
+  "Landform": {
+    "isPending": false,
+    "extends": ["Place"]
+  },
+  "ApprovedIndication": {
+    "isPending": false,
+    "extends": ["MedicalIndication"]
+  },
+  "PaintAction": {
+    "isPending": false,
+    "extends": ["CreateAction"]
+  },
+  "SteeringPositionValue": {
+    "isPending": false,
+    "extends": ["QualitativeValue"]
+  },
+  "Manuscript": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "ComedyClub": {
+    "isPending": false,
+    "extends": ["EntertainmentBusiness"]
+  },
+  "MonetaryAmount": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "ListenAction": {
+    "isPending": false,
+    "extends": ["ConsumeAction"]
+  },
+  "Preschool": {
+    "isPending": false,
+    "extends": ["EducationalOrganization"]
+  },
+  "DefenceEstablishment": {
+    "isPending": false,
+    "extends": ["GovernmentBuilding"]
+  },
+  "EducationalOrganization": {
+    "isPending": false,
+    "extends": ["CivicStructure", "Organization"]
+  },
+  "Newspaper": {
+    "isPending": false,
+    "extends": ["Periodical"]
+  },
+  "GameAvailabilityEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "Optician": {
+    "isPending": false,
+    "extends": ["MedicalBusiness"]
+  },
+  "CurrencyConversionService": {
+    "isPending": false,
+    "extends": ["FinancialProduct"]
+  },
+  "ParcelDelivery": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "GolfCourse": {
+    "isPending": false,
+    "extends": ["SportsActivityLocation"]
+  },
+  "Book": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "CreditCard": {
+    "isPending": false,
+    "extends": ["PaymentCard", "LoanOrCredit"]
+  },
+  "RecyclingCenter": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "QuoteAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "StatusEnumeration": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "MedicalGuidelineContraindication": {
+    "isPending": false,
+    "extends": ["MedicalGuideline"]
+  },
+  "OrderStatus": {
+    "isPending": false,
+    "extends": ["StatusEnumeration"]
+  },
+  "MarryAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
+  },
+  "Course": {
+    "isPending": false,
+    "extends": ["LearningResource", "CreativeWork"]
+  },
+  "Intangible": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "EmailMessage": {
+    "isPending": false,
+    "extends": ["Message"]
+  },
+  "DataFeed": {
+    "isPending": false,
+    "extends": ["Dataset"]
+  },
+  "ReplyAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "EmployerAggregateRating": {
+    "isPending": false,
+    "extends": ["AggregateRating"]
+  },
+  "BankAccount": {
+    "isPending": false,
+    "extends": ["FinancialProduct"]
+  },
+  "SearchRescueOrganization": {
+    "isPending": true,
+    "extends": ["Organization"]
+  },
+  "TieAction": {
+    "isPending": false,
+    "extends": ["AchieveAction"]
+  },
+  "CompoundPriceSpecification": {
+    "isPending": false,
+    "extends": ["PriceSpecification"]
+  },
+  "MusicStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "AudioObjectSnapshot": {
+    "isPending": true,
+    "extends": ["AudioObject"]
+  },
+  "BusinessAudience": {
+    "isPending": false,
+    "extends": ["Audience"]
+  },
+  "BoatTrip": {
+    "isPending": true,
+    "extends": ["Trip"]
+  },
+  "Question": {
+    "isPending": false,
+    "extends": ["Comment"]
+  },
+  "Pharmacy": {
+    "isPending": false,
+    "extends": ["MedicalBusiness", "MedicalOrganization"]
+  },
+  "TierBenefitEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "UserTweets": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "MusicVideoObject": {
+    "isPending": false,
+    "extends": ["MediaObject"]
+  },
+  "EntryPoint": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "ExhibitionEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "DataType": {
+    "isPending": false,
+    "extends": ["rdfs:Class"]
+  },
+  "FloorPlan": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "IceCreamShop": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "SportsClub": {
+    "isPending": false,
+    "extends": ["SportsActivityLocation"]
+  },
+  "Protein": {
+    "isPending": true,
+    "extends": ["BioChemEntity"]
+  },
+  "MeasurementMethodEnum": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "AMRadioChannel": {
+    "isPending": false,
+    "extends": ["RadioChannel"]
+  },
+  "ShippingService": {
+    "isPending": true,
+    "extends": ["StructuredValue"]
+  },
+  "WearAction": {
+    "isPending": false,
+    "extends": ["UseAction"]
+  },
+  "UnitPriceSpecification": {
+    "isPending": false,
+    "extends": ["PriceSpecification"]
+  },
+  "RadioBroadcastService": {
+    "isPending": true,
+    "extends": ["BroadcastService"]
+  },
+  "OwnershipInfo": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "TipAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "VirtualLocation": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "FulfillmentTypeEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "Winery": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "FinancialProduct": {
+    "isPending": false,
+    "extends": ["Service"]
+  },
+  "MusicRecording": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "TelevisionStation": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "Play": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "PlayGameAction": {
+    "isPending": true,
+    "extends": ["ConsumeAction"]
+  },
+  "Accommodation": {
+    "isPending": false,
+    "extends": ["Place"]
+  },
+  "MedicalTestPanel": {
+    "isPending": false,
+    "extends": ["MedicalTest"]
+  },
+  "VideoObjectSnapshot": {
+    "isPending": true,
+    "extends": ["VideoObject"]
+  },
+  "ReturnMethodEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "BeautySalon": {
+    "isPending": false,
+    "extends": ["HealthAndBeautyBusiness"]
+  },
+  "ShareAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "Code": {
+    "isPending": false,
+    "extends": ["CreativeWork"],
+    "supersededBy": "SoftwareSourceCode"
+  },
+  "Service": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Courthouse": {
+    "isPending": false,
+    "extends": ["GovernmentBuilding"]
+  },
+  "UseAction": {
+    "isPending": false,
+    "extends": ["ConsumeAction"]
+  },
+  "GiveAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "InsuranceAgency": {
+    "isPending": false,
+    "extends": ["FinancialService"]
+  },
+  "SingleFamilyResidence": {
+    "isPending": false,
+    "extends": ["House"]
+  },
+  "ApplyAction": {
+    "isPending": false,
+    "extends": ["OrganizeAction"]
+  },
+  "EmployerReview": {
+    "isPending": true,
+    "extends": ["Review"]
+  },
+  "GardenStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "MovieRentalStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "DeliveryEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "TrackAction": {
+    "isPending": false,
+    "extends": ["FindAction"]
+  },
+  "ContactPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "House": {
+    "isPending": false,
+    "extends": ["Accommodation"]
+  },
+  "GeoCircle": {
+    "isPending": false,
+    "extends": ["GeoShape"]
+  },
+  "IPTCDigitalSourceEnumeration": {
+    "isPending": true,
+    "extends": ["MediaEnumeration"]
+  },
+  "AutomotiveBusiness": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "Audiobook": {
+    "isPending": false,
+    "extends": ["AudioObject", "Book"]
+  },
+  "Game": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "PriceSpecification": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "UserDownloads": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "HealthPlanCostSharingSpecification": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "InformAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "GenderType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "OfficeEquipmentStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "WebAPI": {
+    "isPending": true,
+    "extends": ["Service"]
+  },
+  "DanceGroup": {
+    "isPending": false,
+    "extends": ["PerformingGroup"]
+  },
+  "ProductReturnEnumeration": {
+    "isPending": false,
+    "extends": ["Enumeration"],
+    "supersededBy": "MerchantReturnEnumeration"
+  },
+  "LifestyleModification": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "HobbyShop": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "PublicationEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "ResumeAction": {
+    "isPending": false,
+    "extends": ["ControlAction"]
+  },
+  "ChemicalSubstance": {
+    "isPending": true,
+    "extends": ["BioChemEntity"]
+  },
+  "ToyStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "NutritionInformation": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "State": {
+    "isPending": false,
+    "extends": ["AdministrativeArea"]
+  },
+  "BedType": {
+    "isPending": false,
+    "extends": ["QualitativeValue"]
+  },
+  "GovernmentOrganization": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "AdultOrientedEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "Consortium": {
+    "isPending": true,
+    "extends": ["Organization"]
+  },
+  "Diet": {
+    "isPending": false,
+    "extends": ["CreativeWork", "LifestyleModification"]
+  },
+  "DrugPregnancyCategory": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "IndividualProduct": {
+    "isPending": false,
+    "extends": ["Product"]
+  },
+  "ArchiveComponent": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "AddAction": {
+    "isPending": false,
+    "extends": ["UpdateAction"]
+  },
+  "ProductModel": {
+    "isPending": false,
+    "extends": ["Product"]
+  },
+  "HVACBusiness": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "USNonprofitType": {
+    "isPending": true,
+    "extends": ["NonprofitType"]
+  },
+  "SurgicalProcedure": {
+    "isPending": false,
+    "extends": ["MedicalProcedure"]
+  },
+  "HairSalon": {
+    "isPending": false,
+    "extends": ["HealthAndBeautyBusiness"]
+  },
+  "Electrician": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "Bakery": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "ParkingFacility": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Patient": {
+    "isPending": false,
+    "extends": ["MedicalAudience", "Person"]
+  },
+  "MedicalCondition": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "UKNonprofitType": {
+    "isPending": true,
+    "extends": ["NonprofitType"]
+  },
+  "OccupationalExperienceRequirements": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "BookStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "Thing": {
+    "isPending": false
+  },
+  "ShoeStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "MedicalSpecialty": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration", "Specialty"]
+  },
+  "SaleEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "ExerciseGym": {
+    "isPending": false,
+    "extends": ["SportsActivityLocation"]
+  },
+  "OrderAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "InfectiousDisease": {
+    "isPending": false,
+    "extends": ["MedicalCondition"]
+  },
+  "UserCheckins": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "AudioObject": {
+    "isPending": false,
+    "extends": ["MediaObject"]
+  },
+  "BioChemEntity": {
+    "isPending": true,
+    "extends": ["Thing"]
+  },
+  "ShippingRateSettings": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "Hostel": {
+    "isPending": false,
+    "extends": ["LodgingBusiness"]
+  },
+  "School": {
+    "isPending": false,
+    "extends": ["EducationalOrganization"]
+  },
+  "Campground": {
+    "isPending": false,
+    "extends": ["LodgingBusiness", "CivicStructure"]
+  },
+  "Energy": {
+    "isPending": false,
+    "extends": ["Quantity"]
+  },
+  "UnRegisterAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
+  },
+  "LoseAction": {
+    "isPending": false,
+    "extends": ["AchieveAction"]
+  },
+  "WatchAction": {
+    "isPending": false,
+    "extends": ["ConsumeAction"]
+  },
+  "VisualArtsEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "ConsumeAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "BedDetails": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "MerchantReturnEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "Substance": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "Bone": {
+    "isPending": false,
+    "extends": ["AnatomicalStructure"]
+  },
+  "EmergencyService": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "Quotation": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "Cooperative": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "GeoShape": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "JoinAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
+  },
+  "WholesaleStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "NewsArticle": {
+    "isPending": false,
+    "extends": ["Article"]
+  },
+  "TaxiReservation": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "AlignmentObject": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "CheckInAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "SportingGoodsStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "RefundTypeEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "ActionStatusType": {
+    "isPending": false,
+    "extends": ["StatusEnumeration"]
+  },
+  "IncentiveQualifiedExpenseType": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "SeaBodyOfWater": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "Specialty": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "MerchantReturnPolicySeasonalOverride": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "Pond": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "TypeAndQuantityNode": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "NewsMediaOrganization": {
+    "isPending": true,
+    "extends": ["Organization"]
+  },
+  "Seat": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "FindAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "EventAttendanceModeEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "BusStop": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Boolean": {
+    "isPending": false
+  },
+  "IndividualPhysician": {
+    "isPending": false,
+    "extends": ["Physician"]
+  },
+  "VideoObject": {
+    "isPending": false,
+    "extends": ["MediaObject"]
+  },
+  "EndorseAction": {
+    "isPending": false,
+    "extends": ["ReactAction"]
+  },
+  "ViewAction": {
+    "isPending": false,
+    "extends": ["ConsumeAction"]
+  },
+  "ChildrensEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "MedicalBusiness": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "PostOffice": {
+    "isPending": false,
+    "extends": ["GovernmentOffice"]
+  },
+  "MerchantReturnPolicy": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "Church": {
+    "isPending": false,
+    "extends": ["PlaceOfWorship"]
+  },
+  "SchoolDistrict": {
+    "isPending": true,
+    "extends": ["AdministrativeArea"]
+  },
+  "EventVenue": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "WriteAction": {
+    "isPending": false,
+    "extends": ["CreateAction"]
+  },
+  "NailSalon": {
+    "isPending": false,
+    "extends": ["HealthAndBeautyBusiness"]
+  },
+  "MathSolver": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "ElementarySchool": {
+    "isPending": false,
+    "extends": ["EducationalOrganization"]
+  },
+  "MedicalDevicePurpose": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "Vein": {
+    "isPending": false,
+    "extends": ["Vessel"]
+  },
+  "OnlineStore": {
+    "isPending": true,
+    "extends": ["OnlineBusiness"]
+  },
+  "Reservoir": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "Place": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "TreatmentIndication": {
+    "isPending": false,
+    "extends": ["MedicalIndication"]
+  },
+  "DeliveryTimeSettings": {
+    "isPending": false,
+    "extends": ["StructuredValue"],
+    "supersededBy": "ShippingConditions"
+  },
+  "Gene": {
+    "isPending": true,
+    "extends": ["BioChemEntity"]
+  },
+  "EUEnergyEfficiencyEnumeration": {
+    "isPending": true,
+    "extends": ["EnergyEfficiencyEnumeration"]
+  },
+  "AnatomicalStructure": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "AdvertiserContentArticle": {
+    "isPending": true,
+    "extends": ["Article"]
+  },
+  "PostalAddress": {
+    "isPending": false,
+    "extends": ["ContactPoint"]
+  },
+  "AggregateRating": {
+    "isPending": false,
+    "extends": ["Rating"]
+  },
+  "ShoppingCenter": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "CollegeOrUniversity": {
+    "isPending": false,
+    "extends": ["EducationalOrganization"]
+  },
+  "DrugLegalStatus": {
+    "isPending": false,
+    "extends": ["MedicalIntangible"]
+  },
+  "AutoPartsStore": {
+    "isPending": false,
+    "extends": ["Store", "AutomotiveBusiness"]
+  },
+  "FoodService": {
+    "isPending": false,
+    "extends": ["Service"]
+  },
+  "SiteNavigationElement": {
+    "isPending": false,
+    "extends": ["WebPageElement"]
+  },
+  "CreativeWork": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "Movie": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "LocalBusiness": {
+    "isPending": false,
+    "extends": ["Place", "Organization"]
+  },
+  "ComputerLanguage": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "GeneralContractor": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "MedicineSystem": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "EnergyEfficiencyEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "Aquarium": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Enumeration": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "PodcastSeason": {
+    "isPending": true,
+    "extends": ["CreativeWorkSeason"]
+  },
+  "MediaGallery": {
+    "isPending": false,
+    "extends": ["CollectionPage"]
+  },
+  "MemberProgram": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "Project": {
+    "isPending": true,
+    "extends": ["Organization"]
+  },
+  "SoftwareApplication": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "OnlineMarketplace": {
+    "isPending": true,
+    "extends": ["OnlineStore"]
+  },
+  "PrependAction": {
+    "isPending": false,
+    "extends": ["InsertAction"]
+  },
+  "PerformingArtsTheater": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "SheetMusic": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "DENonprofitType": {
+    "isPending": true,
+    "extends": ["NonprofitType"]
+  },
+  "Season": {
+    "isPending": false,
+    "extends": ["CreativeWork"],
+    "supersededBy": "CreativeWorkSeason"
+  },
+  "ReturnAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "ProgramMembership": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Review": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "GovernmentPermit": {
+    "isPending": false,
+    "extends": ["Permit"]
+  },
+  "MedicalRiskEstimator": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "MedicalObservationalStudyDesign": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "ChooseAction": {
+    "isPending": false,
+    "extends": ["AssessAction"]
+  },
+  "GasStation": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "IgnoreAction": {
+    "isPending": false,
+    "extends": ["AssessAction"]
+  },
+  "MediaSubscription": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "BuddhistTemple": {
+    "isPending": false,
+    "extends": ["PlaceOfWorship"]
+  },
+  "Painting": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "PropertyValue": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "UpdateAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "Airport": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Conversation": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Action": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "MemberProgramTier": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "MensClothingStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "Airline": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "BuyAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "InvestmentOrDeposit": {
+    "isPending": false,
+    "extends": ["FinancialProduct"]
+  },
+  "GatedResidenceCommunity": {
+    "isPending": false,
+    "extends": ["Residence"]
+  },
+  "StadiumOrArena": {
+    "isPending": false,
+    "extends": ["CivicStructure", "SportsActivityLocation"]
+  },
+  "MovieClip": {
+    "isPending": false,
+    "extends": ["Clip"]
+  },
+  "Order": {
+    "isPending": false,
+    "extends": ["fibo-fnd-arr-doc:LegalDocument", "Intangible"]
+  },
+  "ProfilePage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "DDxElement": {
+    "isPending": false,
+    "extends": ["MedicalIntangible"]
+  },
+  "DiagnosticLab": {
+    "isPending": false,
+    "extends": ["MedicalOrganization"]
+  },
+  "PeopleAudience": {
+    "isPending": false,
+    "extends": ["Audience"]
+  },
+  "Series": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "BreadcrumbList": {
+    "isPending": false,
+    "extends": ["ItemList"]
+  },
+  "DeleteAction": {
+    "isPending": false,
+    "extends": ["UpdateAction"]
+  },
+  "Demand": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "BusReservation": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "ScheduleAction": {
+    "isPending": false,
+    "extends": ["PlanAction"]
+  },
+  "Reservation": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Offer": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "WPAdBlock": {
+    "isPending": false,
+    "extends": ["WebPageElement"]
+  },
+  "Physician": {
+    "isPending": false,
+    "extends": ["MedicalBusiness", "MedicalOrganization"]
+  },
+  "FoodEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "TouristAttraction": {
+    "isPending": false,
+    "extends": ["Place"]
+  },
+  "WearableSizeSystemEnumeration": {
+    "isPending": true,
+    "extends": ["SizeSystemEnumeration"]
+  },
+  "ReviewNewsArticle": {
+    "isPending": true,
+    "extends": ["CriticReview", "NewsArticle"]
+  },
+  "Drawing": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "RadioClip": {
+    "isPending": false,
+    "extends": ["Clip"]
+  },
+  "Duration": {
+    "isPending": false,
+    "extends": ["Quantity"]
+  },
+  "ProductGroup": {
+    "isPending": true,
+    "extends": ["Product", "cmns-col:Collection", "cmns-cls:Classifier"]
+  },
+  "Menu": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Rating": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "ReservationStatusType": {
+    "isPending": false,
+    "extends": ["StatusEnumeration"]
+  },
+  "GameServer": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "HotelRoom": {
+    "isPending": false,
+    "extends": ["Room"]
+  },
+  "Motorcycle": {
+    "isPending": false,
+    "extends": ["Vehicle"]
+  },
+  "OceanBodyOfWater": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "MusicGroup": {
+    "isPending": false,
+    "extends": ["PerformingGroup"]
+  },
+  "RealEstateAgent": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "HealthInsurancePlan": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "DepartmentStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "AnatomicalSystem": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "Locksmith": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "MotorizedBicycle": {
+    "isPending": false,
+    "extends": ["Vehicle"]
+  },
+  "Blog": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Chapter": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "AssignAction": {
+    "isPending": false,
+    "extends": ["AllocateAction"]
+  },
+  "UserComments": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "DrugPrescriptionStatus": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "SuperficialAnatomy": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "ParentAudience": {
+    "isPending": false,
+    "extends": ["PeopleAudience"]
+  },
+  "BroadcastService": {
+    "isPending": false,
+    "extends": ["Service"]
+  },
+  "LoanOrCredit": {
+    "isPending": false,
+    "extends": ["FinancialProduct"]
+  },
+  "Permit": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "MeetingRoom": {
+    "isPending": false,
+    "extends": ["Room"]
+  },
+  "DefinedTerm": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "ProductReturnPolicy": {
+    "isPending": false,
+    "extends": ["Intangible"],
+    "supersededBy": "MerchantReturnPolicy"
+  },
+  "FastFoodRestaurant": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "EmployeeRole": {
+    "isPending": false,
+    "extends": ["OrganizationRole"]
+  },
+  "GeoCoordinates": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "HowToItem": {
+    "isPending": false,
+    "extends": ["ListItem"]
+  },
+  "AnimalShelter": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "BookmarkAction": {
+    "isPending": false,
+    "extends": ["OrganizeAction"]
+  },
+  "LikeAction": {
+    "isPending": false,
+    "extends": ["ReactAction"]
+  },
+  "IncentiveType": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "BusinessFunction": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "ScholarlyArticle": {
+    "isPending": false,
+    "extends": ["Article"]
+  },
+  "OpinionNewsArticle": {
+    "isPending": true,
+    "extends": ["NewsArticle"]
+  },
+  "ReplaceAction": {
+    "isPending": false,
+    "extends": ["UpdateAction"]
+  },
+  "DateTime": {
+    "isPending": false
+  },
+  "DigitalDocument": {
+    "isPending": false,
+    "extends": ["CreativeWork", "fibo-fnd-arr-doc:Document"]
+  },
+  "SkiResort": {
+    "isPending": false,
+    "extends": ["Resort", "SportsActivityLocation"]
+  },
+  "EventReservation": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "SuspendAction": {
+    "isPending": false,
+    "extends": ["ControlAction"]
+  },
+  "ProfessionalService": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "OfferItemCondition": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "EntertainmentBusiness": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "WPFooter": {
+    "isPending": false,
+    "extends": ["WebPageElement"]
+  },
+  "RsvpResponseType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "Volcano": {
+    "isPending": false,
+    "extends": ["Landform"]
+  },
+  "ApartmentComplex": {
+    "isPending": false,
+    "extends": ["Residence"]
+  },
+  "MedicalProcedureType": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "ItemPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "TransferAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "MotorcycleDealer": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "Joint": {
+    "isPending": false,
+    "extends": ["AnatomicalStructure"]
+  },
+  "Date": {
+    "isPending": false
+  },
+  "DigitalDocumentPermission": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "RadioSeries": {
+    "isPending": false,
+    "extends": ["CreativeWorkSeries"]
+  },
+  "NonprofitType": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "AggregateOffer": {
+    "isPending": false,
+    "extends": ["Offer"]
+  },
+  "TherapeuticProcedure": {
+    "isPending": false,
+    "extends": ["MedicalProcedure"]
+  },
+  "Crematorium": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "TheaterGroup": {
+    "isPending": false,
+    "extends": ["PerformingGroup"]
+  },
+  "MusicRelease": {
+    "isPending": false,
+    "extends": ["MusicPlaylist"]
+  },
+  "SpecialAnnouncement": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "OrganizeAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "Periodical": {
+    "isPending": false,
+    "extends": ["CreativeWorkSeries"]
+  },
+  "SocialMediaPosting": {
+    "isPending": false,
+    "extends": ["Article"]
+  },
+  "TattooParlor": {
+    "isPending": false,
+    "extends": ["HealthAndBeautyBusiness"]
+  },
+  "ClothingStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "Guide": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "MoveAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "MiddleSchool": {
+    "isPending": false,
+    "extends": ["EducationalOrganization"]
+  },
+  "MovieSeries": {
+    "isPending": false,
+    "extends": ["CreativeWorkSeries"]
+  },
+  "DownloadAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "TradeAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "Table": {
+    "isPending": false,
+    "extends": ["WebPageElement"]
+  },
+  "ContactPointOption": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "BroadcastChannel": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "PaymentMethodType": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "Casino": {
+    "isPending": false,
+    "extends": ["EntertainmentBusiness"]
+  },
+  "ServicePeriod": {
+    "isPending": true,
+    "extends": ["StructuredValue"]
+  },
+  "PalliativeProcedure": {
+    "isPending": false,
+    "extends": ["MedicalProcedure", "MedicalTherapy"]
+  },
+  "Plumber": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "VideoGameClip": {
+    "isPending": false,
+    "extends": ["Clip"]
+  },
+  "Organization": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "MedicalAudienceType": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "BikeStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "LocationFeatureSpecification": {
+    "isPending": false,
+    "extends": ["PropertyValue"]
+  },
+  "WarrantyPromise": {
+    "isPending": false,
+    "extends": ["StructuredValue", "fibo-fnd-agr-ctr:MutualContractualAgreement"]
+  },
+  "CampingPitch": {
+    "isPending": false,
+    "extends": ["Accommodation"]
+  },
+  "OpeningHoursSpecification": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "HyperTocEntry": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "DefinedRegion": {
+    "isPending": false,
+    "extends": ["Place", "StructuredValue"]
+  },
+  "DisagreeAction": {
+    "isPending": false,
+    "extends": ["ReactAction"]
+  },
+  "LymphaticVessel": {
+    "isPending": false,
+    "extends": ["Vessel"]
+  },
+  "CompleteDataFeed": {
+    "isPending": true,
+    "extends": ["DataFeed"]
+  },
+  "Schedule": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "ArtGallery": {
+    "isPending": false,
+    "extends": ["EntertainmentBusiness"]
+  },
+  "WebContent": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "RentAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "VitalSign": {
+    "isPending": false,
+    "extends": ["MedicalSign"]
+  },
+  "RentalCarReservation": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "VideoGallery": {
+    "isPending": false,
+    "extends": ["MediaGallery"]
+  },
+  "MobilePhoneStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "ConferenceEvent": {
+    "isPending": true,
+    "extends": ["Event"]
+  },
+  "DiscussionForumPosting": {
+    "isPending": false,
+    "extends": ["SocialMediaPosting"]
+  },
+  "EducationalOccupationalProgram": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "InstantaneousEvent": {
+    "isPending": true,
+    "extends": ["StructuredValue"]
+  },
+  "ElectronicsStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "MedicalOrganization": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "CookAction": {
+    "isPending": false,
+    "extends": ["CreateAction"]
+  },
+  "AgreeAction": {
+    "isPending": false,
+    "extends": ["ReactAction"]
+  },
+  "MedicalConditionStage": {
+    "isPending": false,
+    "extends": ["MedicalIntangible"]
+  },
+  "TrainTrip": {
+    "isPending": false,
+    "extends": ["Trip"]
+  },
+  "Festival": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "ProductCollection": {
+    "isPending": true,
+    "extends": ["Collection", "Product"]
+  },
+  "PriceComponentTypeEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "ContactPoint": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "BusinessEntityType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "PoliticalParty": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "DigitalDocumentPermissionType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "OperatingSystem": {
+    "isPending": true,
+    "extends": ["SoftwareApplication"]
+  },
+  "MaximumDoseSchedule": {
+    "isPending": false,
+    "extends": ["DoseSchedule"]
+  },
+  "DoseSchedule": {
+    "isPending": false,
+    "extends": ["MedicalIntangible"]
+  },
+  "MediaEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "MusicVenue": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "WarrantyScope": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "SizeSpecification": {
+    "isPending": true,
+    "extends": ["QualitativeValue"]
+  },
+  "ConfirmAction": {
+    "isPending": false,
+    "extends": ["InformAction"]
+  },
+  "LegalService": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "MapCategoryType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "BackgroundNewsArticle": {
+    "isPending": true,
+    "extends": ["NewsArticle"]
+  },
+  "ReportedDoseSchedule": {
+    "isPending": false,
+    "extends": ["DoseSchedule"]
+  },
+  "Flight": {
+    "isPending": false,
+    "extends": ["Trip"]
+  },
+  "DefinedTermSet": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "WorkersUnion": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "TakeAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "MedicalStudy": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "GamePlayMode": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "WorkBasedProgram": {
+    "isPending": true,
+    "extends": ["EducationalOccupationalProgram"]
+  },
+  "MediaObject": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "SocialEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "Recipe": {
+    "isPending": false,
+    "extends": ["HowTo"]
+  },
+  "SendAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "CoverArt": {
+    "isPending": false,
+    "extends": ["VisualArtwork"]
+  },
+  "ConvenienceStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "FundingAgency": {
+    "isPending": true,
+    "extends": ["Project"]
+  },
+  "CreateAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "PhysiciansOffice": {
+    "isPending": false,
+    "extends": ["Physician"]
+  },
+  "ComicIssue": {
+    "isPending": false,
+    "extends": ["PublicationIssue"]
+  },
+  "TireShop": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "Apartment": {
+    "isPending": false,
+    "extends": ["Accommodation"]
+  },
+  "AdultEntertainment": {
+    "isPending": false,
+    "extends": ["EntertainmentBusiness"]
+  },
+  "DayOfWeek": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "Playground": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "MedicalSymptom": {
+    "isPending": false,
+    "extends": ["MedicalSignOrSymptom"]
+  },
+  "MenuItem": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "SeekToAction": {
+    "isPending": true,
+    "extends": ["Action"]
+  },
+  "VacationRental": {
+    "isPending": false,
+    "extends": ["LodgingBusiness"]
+  },
+  "ResearchOrganization": {
+    "isPending": true,
+    "extends": ["Organization"]
+  },
+  "TVClip": {
+    "isPending": false,
+    "extends": ["Clip"]
+  },
+  "MusicComposition": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "VeterinaryCare": {
+    "isPending": false,
+    "extends": ["MedicalOrganization"]
+  },
+  "BankOrCreditUnion": {
+    "isPending": false,
+    "extends": ["FinancialService"]
+  },
+  "DrawAction": {
+    "isPending": false,
+    "extends": ["CreateAction"]
+  },
+  "Distance": {
+    "isPending": false,
+    "extends": ["Quantity"]
+  },
+  "Role": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Muscle": {
+    "isPending": false,
+    "extends": ["AnatomicalStructure"]
+  },
+  "GameServerStatus": {
+    "isPending": false,
+    "extends": ["StatusEnumeration"]
+  },
+  "HousePainter": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "Bridge": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "3DModel": {
+    "isPending": true,
+    "extends": ["MediaObject"]
+  },
+  "InvestmentFund": {
+    "isPending": true,
+    "extends": ["InvestmentOrDeposit"]
+  },
+  "Restaurant": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "Float": {
+    "isPending": false,
+    "extends": ["Number"]
+  },
+  "TouristInformationCenter": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "PublicationIssue": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "PublicationVolume": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "DataDownload": {
+    "isPending": false,
+    "extends": ["MediaObject"]
+  },
+  "SatiricalArticle": {
+    "isPending": true,
+    "extends": ["Article"]
+  },
+  "LinkRole": {
+    "isPending": true,
+    "extends": ["Role"]
+  },
+  "ListItem": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "City": {
+    "isPending": false,
+    "extends": ["AdministrativeArea"]
+  },
+  "AboutPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "MedicalEntity": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "BusStation": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "PurchaseType": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "PerformingGroup": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "Motel": {
+    "isPending": false,
+    "extends": ["LodgingBusiness"]
+  },
+  "DiscoverAction": {
+    "isPending": false,
+    "extends": ["FindAction"]
+  },
+  "HardwareStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "MedicalCode": {
+    "isPending": false,
+    "extends": ["MedicalIntangible", "CategoryCode"]
+  },
+  "Researcher": {
+    "isPending": false,
+    "extends": ["Audience"]
+  },
+  "PropertyValueSpecification": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Poster": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "AchieveAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "MedicalWebPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "AutoDealer": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "Episode": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Attorney": {
+    "isPending": false,
+    "extends": ["LegalService"]
+  },
+  "HowToSupply": {
+    "isPending": false,
+    "extends": ["HowToItem"]
+  },
+  "HealthTopicContent": {
+    "isPending": true,
+    "extends": ["WebContent"]
+  },
+  "EnergyConsumptionDetails": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "Cemetery": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "MovieTheater": {
+    "isPending": false,
+    "extends": ["EntertainmentBusiness", "CivicStructure"]
+  },
+  "SportsEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "HealthAspectEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "MolecularEntity": {
+    "isPending": true,
+    "extends": ["BioChemEntity"]
+  },
+  "Waterfall": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "LiteraryEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "PriceTypeEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "CheckOutAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "PayAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "Embassy": {
+    "isPending": false,
+    "extends": ["GovernmentBuilding"]
+  },
+  "Message": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "QualitativeValue": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "Collection": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "PodcastEpisode": {
+    "isPending": true,
+    "extends": ["Episode"]
+  },
+  "SpreadsheetDigitalDocument": {
+    "isPending": false,
+    "extends": ["DigitalDocument"]
+  },
+  "WPHeader": {
+    "isPending": false,
+    "extends": ["WebPageElement"]
+  },
+  "SellAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "MedicalImagingTechnique": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "Canal": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "ImageGallery": {
+    "isPending": false,
+    "extends": ["MediaGallery"]
+  },
+  "BlogPosting": {
+    "isPending": false,
+    "extends": ["SocialMediaPosting"]
+  },
+  "PerformAction": {
+    "isPending": false,
+    "extends": ["PlayAction"]
+  },
+  "MortgageLoan": {
+    "isPending": true,
+    "extends": ["LoanOrCredit"]
+  },
+  "RuntimePlatform": {
+    "isPending": true,
+    "extends": ["SoftwareApplication"]
+  },
+  "Person": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "AskAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "MonetaryGrant": {
+    "isPending": true,
+    "extends": ["Grant"]
+  },
+  "BrainStructure": {
+    "isPending": false,
+    "extends": ["AnatomicalStructure"]
+  },
+  "EventSeries": {
+    "isPending": true,
+    "extends": ["Series", "Event"]
+  },
+  "FilmAction": {
+    "isPending": false,
+    "extends": ["CreateAction"]
+  },
+  "SearchAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "TaxiStand": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "LoginAction": {
+    "isPending": true,
+    "extends": ["ControlAction"]
+  },
+  "LodgingBusiness": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "Text": {
+    "isPending": false
+  },
+  "ComicCoverArt": {
+    "isPending": false,
+    "extends": ["ComicStory", "CoverArt"]
+  },
+  "FoodEstablishmentReservation": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "BarOrPub": {
+    "isPending": false,
+    "extends": ["FoodEstablishment"]
+  },
+  "EducationalAudience": {
+    "isPending": false,
+    "extends": ["Audience"]
+  },
+  "AskPublicNewsArticle": {
+    "isPending": true,
+    "extends": ["NewsArticle"]
+  },
+  "HealthPlanNetwork": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "LegalForceStatus": {
+    "isPending": true,
+    "extends": ["StatusEnumeration"]
+  },
+  "DrugCostCategory": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "AnalysisNewsArticle": {
+    "isPending": true,
+    "extends": ["NewsArticle"]
+  },
+  "ExerciseAction": {
+    "isPending": false,
+    "extends": ["PlayAction"]
+  },
+  "TVEpisode": {
+    "isPending": false,
+    "extends": ["Episode"]
+  },
+  "ResetPasswordAction": {
+    "isPending": true,
+    "extends": ["ControlAction"]
+  },
+  "AuthorizeAction": {
+    "isPending": false,
+    "extends": ["AllocateAction"]
+  },
+  "EmploymentAgency": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "MedicalTrial": {
+    "isPending": false,
+    "extends": ["MedicalStudy"]
+  },
+  "FinancialService": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "StructuredValue": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "MobileApplication": {
+    "isPending": false,
+    "extends": ["SoftwareApplication"]
+  },
+  "EngineSpecification": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "HealthPlanFormulary": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "BorrowAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "TechArticle": {
+    "isPending": false,
+    "extends": ["Article"]
+  },
+  "Claim": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "WPSideBar": {
+    "isPending": false,
+    "extends": ["WebPageElement"]
+  },
+  "ReserveAction": {
+    "isPending": false,
+    "extends": ["PlanAction"]
+  },
+  "OfferShippingDetails": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "ReviewAction": {
+    "isPending": false,
+    "extends": ["AssessAction"]
+  },
+  "Continent": {
+    "isPending": false,
+    "extends": ["Landform"]
+  },
+  "ReadAction": {
+    "isPending": false,
+    "extends": ["ConsumeAction"]
+  },
+  "RoofingContractor": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "DryCleaningOrLaundry": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "Clip": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "MedicalSignOrSymptom": {
+    "isPending": false,
+    "extends": ["MedicalCondition"]
+  },
+  "StatisticalVariable": {
+    "isPending": true,
+    "extends": ["ConstraintNode"]
+  },
+  "GroceryStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "LodgingReservation": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "HealthAndBeautyBusiness": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "TravelAction": {
+    "isPending": false,
+    "extends": ["MoveAction"]
+  },
+  "XPathType": {
+    "isPending": true,
+    "extends": ["Text"]
+  },
+  "NLNonprofitType": {
+    "isPending": true,
+    "extends": ["NonprofitType"]
+  },
+  "GovernmentOffice": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "StatisticalPopulation": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "DonateAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "ShortStory": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "MedicalTherapy": {
+    "isPending": false,
+    "extends": ["TherapeuticProcedure"]
+  },
+  "DrugStrength": {
+    "isPending": false,
+    "extends": ["MedicalIntangible"]
+  },
+  "BrokerageAccount": {
+    "isPending": true,
+    "extends": ["InvestmentOrDeposit"]
+  },
+  "BodyOfWater": {
+    "isPending": false,
+    "extends": ["Landform"]
+  },
+  "RadioSeason": {
+    "isPending": false,
+    "extends": ["CreativeWorkSeason"]
+  },
+  "ReportageNewsArticle": {
+    "isPending": true,
+    "extends": ["NewsArticle"]
+  },
+  "Barcode": {
+    "isPending": false,
+    "extends": ["ImageObject"]
+  },
+  "MedicalTest": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "WearableMeasurementTypeEnumeration": {
+    "isPending": true,
+    "extends": ["MeasurementTypeEnumeration"]
+  },
+  "PsychologicalTreatment": {
+    "isPending": false,
+    "extends": ["TherapeuticProcedure"]
+  },
+  "BookSeries": {
+    "isPending": false,
+    "extends": ["CreativeWorkSeries"]
+  },
+  "URL": {
+    "isPending": false,
+    "extends": ["Text"]
+  },
+  "Recommendation": {
+    "isPending": true,
+    "extends": ["Review"]
+  },
+  "QuantitativeValueDistribution": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "PlanAction": {
+    "isPending": false,
+    "extends": ["OrganizeAction"]
+  },
+  "RecommendedDoseSchedule": {
+    "isPending": false,
+    "extends": ["DoseSchedule"]
+  },
+  "DriveWheelConfigurationValue": {
+    "isPending": false,
+    "extends": ["QualitativeValue"]
+  },
+  "SolveMathAction": {
+    "isPending": true,
+    "extends": ["Action"]
+  },
+  "Number": {
+    "isPending": false
+  },
+  "BroadcastEvent": {
+    "isPending": false,
+    "extends": ["PublicationEvent"]
+  },
+  "Observation": {
+    "isPending": true,
+    "extends": ["QuantitativeValue", "Intangible"]
+  },
+  "Notary": {
+    "isPending": false,
+    "extends": ["LegalService"]
+  },
+  "MedicalClinic": {
+    "isPending": false,
+    "extends": ["MedicalBusiness", "MedicalOrganization"]
+  },
+  "AmpStory": {
+    "isPending": true,
+    "extends": ["CreativeWork", "MediaObject"]
+  },
+  "Vehicle": {
+    "isPending": false,
+    "extends": ["Product"]
+  },
+  "UserPlays": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "ItemList": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "HowToTool": {
+    "isPending": false,
+    "extends": ["HowToItem"]
+  },
+  "MedicalObservationalStudy": {
+    "isPending": false,
+    "extends": ["MedicalStudy"]
+  },
+  "FurnitureStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "LegalValueLevel": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "NGO": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "SelfStorage": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "GovernmentService": {
+    "isPending": false,
+    "extends": ["Service"]
+  },
+  "ReceiveAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "FlightReservation": {
+    "isPending": false,
+    "extends": ["Reservation"]
+  },
+  "CourseInstance": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "MedicalEvidenceLevel": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "OfferCatalog": {
+    "isPending": false,
+    "extends": ["ItemList"]
+  },
+  "TouristDestination": {
+    "isPending": true,
+    "extends": ["Place"]
+  },
+  "EnergyStarEnergyEfficiencyEnumeration": {
+    "isPending": true,
+    "extends": ["EnergyEfficiencyEnumeration"]
+  },
+  "Artery": {
+    "isPending": false,
+    "extends": ["Vessel"]
+  },
+  "PaymentChargeSpecification": {
+    "isPending": false,
+    "extends": ["PriceSpecification"]
+  },
+  "MusicAlbumReleaseType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "CableOrSatelliteService": {
+    "isPending": false,
+    "extends": ["Service"]
+  },
+  "MedicalIntangible": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "PaymentService": {
+    "isPending": false,
+    "extends": ["PaymentMethod", "FinancialProduct"]
+  },
+  "CheckAction": {
+    "isPending": false,
+    "extends": ["FindAction"]
+  },
+  "RealEstateListing": {
+    "isPending": true,
+    "extends": ["WebPage"]
+  },
+  "InteractionCounter": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "BoardingPolicyType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "AssessAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "DepositAccount": {
+    "isPending": false,
+    "extends": ["InvestmentOrDeposit", "BankAccount"]
+  },
+  "ReactAction": {
+    "isPending": false,
+    "extends": ["AssessAction"]
+  },
+  "AmusementPark": {
+    "isPending": false,
+    "extends": ["EntertainmentBusiness"]
+  },
+  "Report": {
+    "isPending": false,
+    "extends": ["Article"]
+  },
+  "ComputerStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "WinAction": {
+    "isPending": false,
+    "extends": ["AchieveAction"]
+  },
+  "SportsOrganization": {
+    "isPending": false,
+    "extends": ["Organization"]
+  },
+  "ItemListOrderType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "FireStation": {
+    "isPending": false,
+    "extends": ["CivicStructure", "EmergencyService"]
+  },
+  "MedicalRiskCalculator": {
+    "isPending": false,
+    "extends": ["MedicalRiskEstimator"]
+  },
+  "MedicalRiskScore": {
+    "isPending": false,
+    "extends": ["MedicalRiskEstimator"]
+  },
+  "DislikeAction": {
+    "isPending": false,
+    "extends": ["ReactAction"]
+  },
+  "MoneyTransfer": {
+    "isPending": true,
+    "extends": ["TransferAction"]
+  },
+  "ChildCare": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "PaymentCard": {
+    "isPending": false,
+    "extends": ["PaymentMethod", "FinancialProduct"]
+  },
+  "OrderItem": {
+    "isPending": false,
+    "extends": ["StructuredValue"]
+  },
+  "QAPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "ReturnLabelSourceEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "InteractAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "TVSeries": {
+    "isPending": false,
+    "extends": ["CreativeWorkSeries", "CreativeWork"]
+  },
+  "Ticket": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "Dataset": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Florist": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "MovingCompany": {
+    "isPending": false,
+    "extends": ["HomeAndConstructionBusiness"]
+  },
+  "Museum": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Resort": {
+    "isPending": false,
+    "extends": ["LodgingBusiness"]
+  },
+  "WebSite": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "Drug": {
+    "isPending": false,
+    "extends": ["Product", "Substance"]
+  },
+  "OnlineBusiness": {
+    "isPending": true,
+    "extends": ["Organization"]
+  },
+  "ComedyEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "CertificationStatusEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "APIReference": {
+    "isPending": false,
+    "extends": ["TechArticle"]
+  },
+  "BoatTerminal": {
+    "isPending": true,
+    "extends": ["CivicStructure"]
+  },
+  "CategoryCodeSet": {
+    "isPending": true,
+    "extends": ["DefinedTermSet"]
+  },
+  "MusicAlbumProductionType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "TouristTrip": {
+    "isPending": true,
+    "extends": ["Trip"]
+  },
+  "RadioChannel": {
+    "isPending": false,
+    "extends": ["BroadcastChannel"]
+  },
+  "SizeGroupEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "AutoRental": {
+    "isPending": false,
+    "extends": ["AutomotiveBusiness"]
+  },
+  "ImageObject": {
+    "isPending": false,
+    "extends": ["MediaObject"]
+  },
+  "CommentAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "ComicStory": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "ResearchProject": {
+    "isPending": true,
+    "extends": ["Project"]
+  },
+  "PlayAction": {
+    "isPending": false,
+    "extends": ["Action"]
+  },
+  "ImagingTest": {
+    "isPending": false,
+    "extends": ["MedicalTest"]
+  },
+  "RestrictedDiet": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "Property": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "OfferForLease": {
+    "isPending": true,
+    "extends": ["Offer"]
+  },
+  "HomeAndConstructionBusiness": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "ConstraintNode": {
+    "isPending": true,
+    "extends": ["Intangible"]
+  },
+  "Credential": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "JobPosting": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "DataFeedItem": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "MonetaryAmountDistribution": {
+    "isPending": false,
+    "extends": ["QuantitativeValueDistribution"]
+  },
+  "CategoryCode": {
+    "isPending": true,
+    "extends": ["DefinedTerm"]
+  },
+  "PetStore": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "CivicStructure": {
+    "isPending": false,
+    "extends": ["Place"]
+  },
+  "AccountingService": {
+    "isPending": false,
+    "extends": ["FinancialService"]
+  },
+  "OrganizationRole": {
+    "isPending": false,
+    "extends": ["Role"]
+  },
+  "UserLikes": {
+    "isPending": false,
+    "extends": ["UserInteraction"],
+    "supersededBy": "InteractionCounter"
+  },
+  "RadioStation": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "RadiationTherapy": {
+    "isPending": false,
+    "extends": ["MedicalTherapy"]
+  },
+  "EducationEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "OccupationalTherapy": {
+    "isPending": false,
+    "extends": ["MedicalTherapy"]
   },
   "FoodEstablishment": {
     "isPending": false,
@@ -31,3718 +3334,426 @@
     "isPending": true,
     "extends": ["Review"]
   },
-  "CompleteDataFeed": {
-    "isPending": true,
-    "extends": ["DataFeed"]
-  },
-  "JewelryStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "IPTCDigitalSourceEnumeration": {
-    "isPending": true,
-    "extends": ["MediaEnumeration"]
-  },
-  "LeaveAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "BoatReservation": {
-    "isPending": true,
-    "extends": ["Reservation"]
-  },
-  "WholesaleStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "Diet": {
-    "isPending": false,
-    "extends": ["CreativeWork", "LifestyleModification"]
-  },
-  "Certification": {
-    "isPending": true,
-    "extends": ["fibo-fnd-arr-doc:Certificate", "CreativeWork"]
-  },
-  "MedicalRiskFactor": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "Continent": {
-    "isPending": false,
-    "extends": ["Landform"]
-  },
-  "TVSeason": {
-    "isPending": false,
-    "extends": ["CreativeWorkSeason", "CreativeWork"]
-  },
-  "ProductCollection": {
-    "isPending": true,
-    "extends": ["Product", "Collection"]
-  },
-  "VideoObjectSnapshot": {
-    "isPending": true,
-    "extends": ["VideoObject"]
-  },
-  "MusicRecording": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "3DModel": {
-    "isPending": true,
-    "extends": ["MediaObject"]
-  },
-  "SchoolDistrict": {
-    "isPending": true,
-    "extends": ["AdministrativeArea"]
-  },
-  "DateTime": {
-    "isPending": false
-  },
-  "AggregateOffer": {
-    "isPending": false,
-    "extends": ["Offer"]
-  },
-  "Distillery": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "BroadcastFrequencySpecification": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Manuscript": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "GovernmentPermit": {
-    "isPending": false,
-    "extends": ["Permit"]
-  },
-  "GolfCourse": {
-    "isPending": false,
-    "extends": ["SportsActivityLocation"]
-  },
-  "EmploymentAgency": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "PaymentCard": {
-    "isPending": false,
-    "extends": ["FinancialProduct", "PaymentMethod"]
-  },
-  "UserTweets": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "QAPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "ParkingFacility": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "HowToSection": {
-    "isPending": false,
-    "extends": ["CreativeWork", "ItemList", "ListItem"]
-  },
-  "CampingPitch": {
-    "isPending": false,
-    "extends": ["Accommodation"]
-  },
-  "MapCategoryType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "TextObject": {
-    "isPending": false,
-    "extends": ["MediaObject"]
-  },
-  "Map": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "SiteNavigationElement": {
-    "isPending": false,
-    "extends": ["WebPageElement"]
-  },
-  "OnlineStore": {
-    "isPending": true,
-    "extends": ["OnlineBusiness"]
-  },
-  "AssignAction": {
-    "isPending": false,
-    "extends": ["AllocateAction"]
-  },
-  "FastFoodRestaurant": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "QuantitativeValueDistribution": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "NGO": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "RealEstateListing": {
-    "isPending": true,
-    "extends": ["WebPage"]
-  },
-  "DigitalDocumentPermission": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "SomeProducts": {
-    "isPending": false,
-    "extends": ["Product"]
-  },
-  "DiscoverAction": {
-    "isPending": false,
-    "extends": ["FindAction"]
-  },
-  "ScholarlyArticle": {
-    "isPending": false,
-    "extends": ["Article"]
-  },
-  "TaxiReservation": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "Event": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "RuntimePlatform": {
-    "isPending": true,
-    "extends": ["SoftwareApplication"]
-  },
-  "Pharmacy": {
-    "isPending": false,
-    "extends": ["MedicalOrganization", "MedicalBusiness"]
-  },
-  "AdministrativeArea": {
-    "isPending": false,
-    "extends": ["Place"]
-  },
-  "Patient": {
-    "isPending": false,
-    "extends": ["MedicalAudience", "Person"]
-  },
-  "Permit": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "TattooParlor": {
-    "isPending": false,
-    "extends": ["HealthAndBeautyBusiness"]
-  },
-  "PlayAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "Protein": {
-    "isPending": true,
-    "extends": ["BioChemEntity"]
-  },
-  "MotorizedBicycle": {
-    "isPending": false,
-    "extends": ["Vehicle"]
-  },
-  "MedicalIndication": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "BusinessAudience": {
-    "isPending": false,
-    "extends": ["Audience"]
-  },
-  "Guide": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "TheaterGroup": {
-    "isPending": false,
-    "extends": ["PerformingGroup"]
-  },
-  "Playground": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "Apartment": {
-    "isPending": false,
-    "extends": ["Accommodation"]
-  },
-  "Course": {
-    "isPending": false,
-    "extends": ["LearningResource", "CreativeWork"]
-  },
-  "CheckAction": {
-    "isPending": false,
-    "extends": ["FindAction"]
-  },
-  "Quotation": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "Taxon": {
-    "isPending": true,
-    "extends": ["Thing"]
-  },
-  "AchieveAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "ShortStory": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "WPHeader": {
-    "isPending": false,
-    "extends": ["WebPageElement"]
-  },
-  "MedicalSignOrSymptom": {
-    "isPending": false,
-    "extends": ["MedicalCondition"]
-  },
-  "Audience": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "MusicRelease": {
-    "isPending": false,
-    "extends": ["MusicPlaylist"]
-  },
-  "PaymentService": {
-    "isPending": false,
-    "extends": ["FinancialProduct", "PaymentMethod"]
-  },
-  "Episode": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "PhysiciansOffice": {
-    "isPending": false,
-    "extends": ["Physician"]
-  },
-  "AutoRepair": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "GardenStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "SocialMediaPosting": {
-    "isPending": false,
-    "extends": ["Article"]
-  },
-  "TVClip": {
-    "isPending": false,
-    "extends": ["Clip"]
-  },
-  "MediaReviewItem": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "AmpStory": {
-    "isPending": true,
-    "extends": ["CreativeWork", "MediaObject"]
-  },
-  "ResetPasswordAction": {
-    "isPending": true,
-    "extends": ["ControlAction"]
-  },
-  "PlanAction": {
-    "isPending": false,
-    "extends": ["OrganizeAction"]
-  },
-  "Place": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "BedDetails": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "MediaGallery": {
-    "isPending": false,
-    "extends": ["CollectionPage"]
-  },
-  "WarrantyPromise": {
-    "isPending": false,
-    "extends": ["fibo-fnd-agr-ctr:MutualContractualAgreement", "StructuredValue"]
-  },
-  "Demand": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "MedicalConditionStage": {
-    "isPending": false,
-    "extends": ["MedicalIntangible"]
-  },
-  "PublicationVolume": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "ImageObjectSnapshot": {
-    "isPending": true,
-    "extends": ["ImageObject"]
-  },
-  "GovernmentOrganization": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "Person": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "PeopleAudience": {
-    "isPending": false,
-    "extends": ["Audience"]
-  },
-  "Integer": {
-    "isPending": false,
-    "extends": ["Number"]
-  },
-  "PerformanceRole": {
-    "isPending": false,
-    "extends": ["Role"]
-  },
-  "SoftwareApplication": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "MenuSection": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "Occupation": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "FurnitureStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "ReserveAction": {
-    "isPending": false,
-    "extends": ["PlanAction"]
-  },
-  "MedicalAudienceType": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "DrugClass": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "WebPage": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "MedicalObservationalStudy": {
-    "isPending": false,
-    "extends": ["MedicalStudy"]
-  },
-  "BusTrip": {
-    "isPending": false,
-    "extends": ["Trip"]
-  },
-  "MerchantReturnEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "Organization": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "InfectiousDisease": {
-    "isPending": false,
-    "extends": ["MedicalCondition"]
-  },
-  "Product": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "ContactPointOption": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "RentAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "TouristDestination": {
-    "isPending": true,
-    "extends": ["Place"]
-  },
-  "DigitalDocument": {
-    "isPending": false,
-    "extends": ["CreativeWork", "fibo-fnd-arr-doc:Document"]
-  },
-  "PreventionIndication": {
-    "isPending": false,
-    "extends": ["MedicalIndication"]
-  },
-  "AppendAction": {
-    "isPending": false,
-    "extends": ["InsertAction"]
-  },
-  "BookStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "BloodTest": {
-    "isPending": false,
-    "extends": ["MedicalTest"]
-  },
-  "PhysicalActivity": {
-    "isPending": false,
-    "extends": ["LifestyleModification"]
-  },
-  "SuperficialAnatomy": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "Comment": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "GeoShape": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "GeoCoordinates": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "Hackathon": {
-    "isPending": true,
-    "extends": ["Event"]
-  },
-  "HowToStep": {
-    "isPending": false,
-    "extends": ["CreativeWork", "ItemList", "ListItem"]
-  },
-  "Winery": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "PaymentMethodType": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "MedicalStudy": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "Photograph": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "FoodEstablishmentReservation": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "Language": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "FundingScheme": {
-    "isPending": true,
-    "extends": ["Organization"]
-  },
-  "Artery": {
-    "isPending": false,
-    "extends": ["Vessel"]
-  },
-  "FundingAgency": {
-    "isPending": true,
-    "extends": ["Project"]
-  },
-  "MusicComposition": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "InvestmentOrDeposit": {
-    "isPending": false,
-    "extends": ["FinancialProduct"]
-  },
-  "PriceSpecification": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "PublicSwimmingPool": {
-    "isPending": false,
-    "extends": ["SportsActivityLocation"]
-  },
-  "Error": {
-    "isPending": true,
-    "extends": ["InstantaneousEvent", "sarif:Result"]
-  },
-  "GameServerStatus": {
-    "isPending": false,
-    "extends": ["StatusEnumeration"]
-  },
-  "CollegeOrUniversity": {
-    "isPending": false,
-    "extends": ["EducationalOrganization"]
-  },
-  "ItemListOrderType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "Corporation": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "OfferForPurchase": {
-    "isPending": true,
-    "extends": ["Offer"]
-  },
-  "LegalValueLevel": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "DrugStrength": {
-    "isPending": false,
-    "extends": ["MedicalIntangible"]
-  },
-  "Order": {
-    "isPending": false,
-    "extends": ["Intangible", "fibo-fnd-arr-doc:LegalDocument"]
-  },
-  "MedicalTestPanel": {
-    "isPending": false,
-    "extends": ["MedicalTest"]
-  },
-  "ComicCoverArt": {
-    "isPending": false,
-    "extends": ["ComicStory", "CoverArt"]
-  },
-  "OpeningHoursSpecification": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "BuddhistTemple": {
-    "isPending": false,
-    "extends": ["PlaceOfWorship"]
-  },
-  "BedAndBreakfast": {
-    "isPending": false,
-    "extends": ["LodgingBusiness"]
-  },
-  "DrugLegalStatus": {
-    "isPending": false,
-    "extends": ["MedicalIntangible"]
-  },
-  "SeekToAction": {
-    "isPending": true,
-    "extends": ["Action"]
-  },
-  "FloorPlan": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "SizeSpecification": {
-    "isPending": true,
-    "extends": ["QualitativeValue"]
-  },
-  "Courthouse": {
-    "isPending": false,
-    "extends": ["GovernmentBuilding"]
-  },
-  "VirtualLocation": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "RadioSeries": {
-    "isPending": false,
-    "extends": ["CreativeWorkSeries"]
-  },
-  "PaintAction": {
-    "isPending": false,
-    "extends": ["CreateAction"]
-  },
-  "DrugCost": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "MediaObject": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "Painting": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "DefinedRegion": {
-    "isPending": false,
-    "extends": ["Place", "StructuredValue"]
-  },
-  "MedicineSystem": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "ReplaceAction": {
-    "isPending": false,
-    "extends": ["UpdateAction"]
-  },
-  "HealthPlanNetwork": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "City": {
-    "isPending": false,
-    "extends": ["AdministrativeArea"]
-  },
-  "ApplyAction": {
-    "isPending": false,
-    "extends": ["OrganizeAction"]
-  },
-  "SpreadsheetDigitalDocument": {
-    "isPending": false,
-    "extends": ["DigitalDocument"]
-  },
-  "SportsOrganization": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "MoneyTransfer": {
-    "isPending": true,
-    "extends": ["TransferAction"]
-  },
-  "Car": {
-    "isPending": false,
-    "extends": ["Vehicle"]
-  },
-  "MedicalIntangible": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "DryCleaningOrLaundry": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "AuthenticateAction": {
-    "isPending": true,
-    "extends": ["ControlAction"]
-  },
-  "ControlAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "Recipe": {
-    "isPending": false,
-    "extends": ["HowTo"]
-  },
-  "BookmarkAction": {
-    "isPending": false,
-    "extends": ["OrganizeAction"]
-  },
-  "InsuranceAgency": {
-    "isPending": false,
-    "extends": ["FinancialService"]
-  },
-  "TakeAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "SubwayStation": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "PoliticalParty": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "RadioClip": {
-    "isPending": false,
-    "extends": ["Clip"]
-  },
-  "TouristInformationCenter": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "SeaBodyOfWater": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "Service": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "OnlineBusiness": {
-    "isPending": true,
-    "extends": ["Organization"]
-  },
-  "CivicStructure": {
-    "isPending": false,
-    "extends": ["Place"]
-  },
-  "Duration": {
-    "isPending": false,
-    "extends": ["Quantity"]
-  },
-  "Grant": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "LegalForceStatus": {
-    "isPending": true,
-    "extends": ["StatusEnumeration"]
-  },
-  "HealthPlanFormulary": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "ProductGroup": {
-    "isPending": true,
-    "extends": ["cmns-cls:Classifier", "cmns-col:Collection", "Product"]
-  },
-  "PoliceStation": {
-    "isPending": false,
-    "extends": ["CivicStructure", "EmergencyService"]
-  },
-  "SportsTeam": {
-    "isPending": false,
-    "extends": ["SportsOrganization"]
-  },
-  "PlayGameAction": {
-    "isPending": true,
-    "extends": ["ConsumeAction"]
-  },
-  "ShippingDeliveryTime": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "ContactPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "DanceGroup": {
-    "isPending": false,
-    "extends": ["PerformingGroup"]
-  },
-  "Sculpture": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "RecyclingCenter": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "LocalBusiness": {
-    "isPending": false,
-    "extends": ["Place", "Organization"]
-  },
-  "SuspendAction": {
-    "isPending": false,
-    "extends": ["ControlAction"]
-  },
-  "MediaSubscription": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "NutritionInformation": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "SportsActivityLocation": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "Intangible": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "MedicalStudyStatus": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "Resort": {
-    "isPending": false,
-    "extends": ["LodgingBusiness"]
-  },
-  "NLNonprofitType": {
-    "isPending": true,
-    "extends": ["NonprofitType"]
-  },
-  "Atlas": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "SportsClub": {
-    "isPending": false,
-    "extends": ["SportsActivityLocation"]
-  },
-  "MediaEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "PriceTypeEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "ReturnFeesEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "UnitPriceSpecification": {
-    "isPending": false,
-    "extends": ["PriceSpecification"]
-  },
-  "RadioSeason": {
-    "isPending": false,
-    "extends": ["CreativeWorkSeason"]
-  },
-  "ReturnAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "HealthAndBeautyBusiness": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "OfferShippingDetails": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "PresentationDigitalDocument": {
-    "isPending": false,
-    "extends": ["DigitalDocument"]
-  },
-  "Drawing": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "BefriendAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "AgreeAction": {
-    "isPending": false,
-    "extends": ["ReactAction"]
-  },
-  "RoofingContractor": {
-    "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
-  },
-  "OceanBodyOfWater": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "Date": {
-    "isPending": false
-  },
-  "RiverBodyOfWater": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "MedicalScholarlyArticle": {
-    "isPending": false,
-    "extends": ["ScholarlyArticle"]
-  },
-  "ConfirmAction": {
-    "isPending": false,
-    "extends": ["InformAction"]
-  },
-  "TVSeries": {
-    "isPending": false,
-    "extends": ["CreativeWork", "CreativeWorkSeries"]
-  },
-  "GasStation": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "WantAction": {
-    "isPending": false,
-    "extends": ["ReactAction"]
-  },
-  "WPSideBar": {
-    "isPending": false,
-    "extends": ["WebPageElement"]
-  },
-  "Library": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "TrainStation": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "PerformAction": {
-    "isPending": false,
-    "extends": ["PlayAction"]
-  },
-  "Class": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "AboutPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "MathSolver": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "EndorseAction": {
-    "isPending": false,
-    "extends": ["ReactAction"]
-  },
-  "PrependAction": {
-    "isPending": false,
-    "extends": ["InsertAction"]
-  },
-  "FilmAction": {
-    "isPending": false,
-    "extends": ["CreateAction"]
-  },
-  "SolveMathAction": {
-    "isPending": true,
-    "extends": ["Action"]
-  },
-  "EducationEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "ArriveAction": {
-    "isPending": false,
-    "extends": ["MoveAction"]
-  },
-  "EmployeeRole": {
-    "isPending": false,
-    "extends": ["OrganizationRole"]
-  },
-  "ExchangeRateSpecification": {
-    "isPending": true,
-    "extends": ["StructuredValue"]
-  },
-  "BusStop": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "SoftwareSourceCode": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "EmployerAggregateRating": {
-    "isPending": false,
-    "extends": ["AggregateRating"]
-  },
-  "EducationalOccupationalProgram": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "IncentiveQualifiedExpenseType": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "Seat": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "LocationFeatureSpecification": {
-    "isPending": false,
-    "extends": ["PropertyValue"]
-  },
-  "AnimalShelter": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "MerchantReturnPolicySeasonalOverride": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "UserComments": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "Volcano": {
-    "isPending": false,
-    "extends": ["Landform"]
-  },
-  "InteractAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "LearningResource": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "Hospital": {
-    "isPending": false,
-    "extends": ["CivicStructure", "EmergencyService", "MedicalOrganization"]
-  },
-  "Book": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "Boolean": {
-    "isPending": false
-  },
-  "BuyAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "PriceComponentTypeEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "ShippingConditions": {
-    "isPending": true,
-    "extends": ["StructuredValue"]
-  },
-  "HealthInsurancePlan": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "BroadcastEvent": {
-    "isPending": false,
-    "extends": ["PublicationEvent"]
-  },
-  "LoginAction": {
-    "isPending": true,
-    "extends": ["ControlAction"]
-  },
-  "QuantitativeValue": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "ReportedDoseSchedule": {
-    "isPending": false,
-    "extends": ["DoseSchedule"]
-  },
-  "WPFooter": {
-    "isPending": false,
-    "extends": ["WebPageElement"]
-  },
-  "CancelAction": {
-    "isPending": false,
-    "extends": ["PlanAction"]
-  },
-  "CatholicChurch": {
-    "isPending": false,
-    "extends": ["Church"]
-  },
-  "LoanOrCredit": {
-    "isPending": false,
-    "extends": ["FinancialProduct"]
-  },
-  "PaymentStatusType": {
-    "isPending": false,
-    "extends": ["StatusEnumeration"]
-  },
-  "OnDemandEvent": {
-    "isPending": false,
-    "extends": ["PublicationEvent"]
-  },
-  "SequentialArt": {
-    "isPending": false,
-    "extends": ["VisualArtwork", "Book"]
-  },
-  "SearchRescueOrganization": {
-    "isPending": true,
-    "extends": ["Organization"]
-  },
-  "EntertainmentBusiness": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "MenuItem": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "TireShop": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "Drug": {
-    "isPending": false,
-    "extends": ["Substance", "Product"]
-  },
-  "ExerciseAction": {
-    "isPending": false,
-    "extends": ["PlayAction"]
-  },
-  "MonetaryGrant": {
-    "isPending": true,
-    "extends": ["Grant"]
-  },
-  "BrokerageAccount": {
-    "isPending": true,
-    "extends": ["InvestmentOrDeposit"]
-  },
-  "BowlingAlley": {
-    "isPending": false,
-    "extends": ["SportsActivityLocation"]
-  },
-  "EventVenue": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "DiagnosticProcedure": {
-    "isPending": false,
-    "extends": ["MedicalProcedure"]
-  },
-  "HealthPlanCostSharingSpecification": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "TravelAction": {
-    "isPending": false,
-    "extends": ["MoveAction"]
-  },
-  "MedicalObservationalStudyDesign": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "ReservationStatusType": {
-    "isPending": false,
-    "extends": ["StatusEnumeration"]
-  },
   "Taxi": {
     "isPending": false,
     "extends": ["Service"],
     "supersededBy": "TaxiService"
   },
-  "Airport": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "DeactivateAction": {
-    "isPending": false,
-    "extends": ["ControlAction"]
-  },
-  "CookAction": {
-    "isPending": false,
-    "extends": ["CreateAction"]
-  },
-  "MovieSeries": {
-    "isPending": false,
-    "extends": ["CreativeWorkSeries"]
-  },
-  "Observation": {
-    "isPending": true,
-    "extends": ["Intangible", "QuantitativeValue"]
-  },
-  "ClothingStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "FMRadioChannel": {
-    "isPending": false,
-    "extends": ["RadioChannel"]
-  },
-  "ChemicalSubstance": {
-    "isPending": true,
-    "extends": ["BioChemEntity"]
-  },
-  "USNonprofitType": {
-    "isPending": true,
-    "extends": ["NonprofitType"]
-  },
-  "ComicIssue": {
-    "isPending": false,
-    "extends": ["PublicationIssue"]
-  },
-  "Reservoir": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "CategoryCode": {
-    "isPending": true,
-    "extends": ["DefinedTerm"]
-  },
-  "TextDigitalDocument": {
-    "isPending": false,
-    "extends": ["DigitalDocument"]
-  },
-  "GenderType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "APIReference": {
-    "isPending": false,
-    "extends": ["TechArticle"]
-  },
-  "AutoBodyShop": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "EnergyStarEnergyEfficiencyEnumeration": {
-    "isPending": true,
-    "extends": ["EnergyEfficiencyEnumeration"]
-  },
-  "Quiz": {
-    "isPending": true,
-    "extends": ["LearningResource"]
-  },
-  "Embassy": {
-    "isPending": false,
-    "extends": ["GovernmentBuilding"]
-  },
-  "Vein": {
-    "isPending": false,
-    "extends": ["Vessel"]
-  },
-  "RadioEpisode": {
-    "isPending": false,
-    "extends": ["Episode"]
-  },
-  "ProfilePage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "Legislation": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "VacationRental": {
-    "isPending": false,
-    "extends": ["LodgingBusiness"]
-  },
-  "HotelRoom": {
-    "isPending": false,
-    "extends": ["Room"]
-  },
-  "AcceptAction": {
-    "isPending": false,
-    "extends": ["AllocateAction"]
-  },
-  "DeliveryEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "ListItem": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Joint": {
-    "isPending": false,
-    "extends": ["AnatomicalStructure"]
-  },
-  "DeleteAction": {
-    "isPending": false,
-    "extends": ["UpdateAction"]
-  },
-  "ActionStatusType": {
-    "isPending": false,
-    "extends": ["StatusEnumeration"]
-  },
-  "ConferenceEvent": {
-    "isPending": true,
-    "extends": ["Event"]
-  },
-  "ConvenienceStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "Flight": {
-    "isPending": false,
-    "extends": ["Trip"]
-  },
-  "ScreeningEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "Game": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "ScheduleAction": {
-    "isPending": false,
-    "extends": ["PlanAction"]
-  },
-  "MiddleSchool": {
-    "isPending": false,
-    "extends": ["EducationalOrganization"]
-  },
-  "MedicalImagingTechnique": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "ReadAction": {
-    "isPending": false,
-    "extends": ["ConsumeAction"]
-  },
-  "CurrencyConversionService": {
-    "isPending": false,
-    "extends": ["FinancialProduct"]
-  },
-  "DrawAction": {
-    "isPending": false,
-    "extends": ["CreateAction"]
-  },
-  "MensClothingStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "ShareAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "MedicalSign": {
-    "isPending": false,
-    "extends": ["MedicalSignOrSymptom"]
-  },
-  "Cemetery": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "LakeBodyOfWater": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "Locksmith": {
-    "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
-  },
-  "CollectionPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "ServicePeriod": {
-    "isPending": true,
-    "extends": ["StructuredValue"]
-  },
-  "OrderAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "ComedyEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "CoverArt": {
-    "isPending": false,
-    "extends": ["VisualArtwork"]
-  },
-  "Chapter": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "PerformingArtsEvent": {
-    "isPending": true,
-    "extends": ["Event"]
-  },
-  "RsvpResponseType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "EndorsementRating": {
-    "isPending": false,
-    "extends": ["Rating"]
-  },
-  "LifestyleModification": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "NonprofitType": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "LegislationObject": {
-    "isPending": true,
-    "extends": ["MediaObject", "Legislation"]
-  },
-  "MedicalWebPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "OfferItemCondition": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "PostalCodeRangeSpecification": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "HowTo": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "TaxiService": {
-    "isPending": false,
-    "extends": ["Service"]
-  },
-  "SocialEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "BusinessEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "DiagnosticLab": {
-    "isPending": false,
-    "extends": ["MedicalOrganization"]
-  },
-  "BedType": {
-    "isPending": false,
-    "extends": ["QualitativeValue"]
-  },
-  "GiveAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "EnergyEfficiencyEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "TreatmentIndication": {
-    "isPending": false,
-    "extends": ["MedicalIndication"]
-  },
-  "FireStation": {
-    "isPending": false,
-    "extends": ["CivicStructure", "EmergencyService"]
-  },
-  "AmusementPark": {
-    "isPending": false,
-    "extends": ["EntertainmentBusiness"]
-  },
-  "DeliveryChargeSpecification": {
-    "isPending": false,
-    "extends": ["PriceSpecification"]
-  },
-  "ListenAction": {
-    "isPending": false,
-    "extends": ["ConsumeAction"]
-  },
-  "TravelAgency": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "BoatTerminal": {
-    "isPending": true,
-    "extends": ["CivicStructure"]
-  },
-  "BookSeries": {
-    "isPending": false,
-    "extends": ["CreativeWorkSeries"]
-  },
-  "MovingCompany": {
-    "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
-  },
-  "ComputerStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "EnergyConsumptionDetails": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "HyperToc": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "ComicStory": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "LiveBlogPosting": {
-    "isPending": false,
-    "extends": ["BlogPosting"]
-  },
-  "MedicalEntity": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "Table": {
-    "isPending": false,
-    "extends": ["WebPageElement"]
-  },
-  "SingleFamilyResidence": {
-    "isPending": false,
-    "extends": ["House"]
-  },
-  "CommentAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "UserPageVisits": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "AggregateRating": {
-    "isPending": false,
-    "extends": ["Rating"]
-  },
-  "ItemAvailability": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "TelevisionStation": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "MedicalGuidelineRecommendation": {
-    "isPending": false,
-    "extends": ["MedicalGuideline"]
-  },
-  "ItemList": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "LymphaticVessel": {
-    "isPending": false,
-    "extends": ["Vessel"]
-  },
-  "PublicationIssue": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "CertificationStatusEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "UpdateAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "House": {
-    "isPending": false,
-    "extends": ["Accommodation"]
-  },
-  "MeasurementTypeEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "SpeakableSpecification": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "NightClub": {
-    "isPending": false,
-    "extends": ["EntertainmentBusiness"]
-  },
-  "ExhibitionEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "NoteDigitalDocument": {
-    "isPending": false,
-    "extends": ["DigitalDocument"]
-  },
-  "AutoWash": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "RegisterAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "DefenceEstablishment": {
-    "isPending": false,
-    "extends": ["GovernmentBuilding"]
-  },
-  "MedicalTrial": {
-    "isPending": false,
-    "extends": ["MedicalStudy"]
-  },
-  "GameServer": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "IncentiveStatus": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "CreativeWork": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "Bone": {
-    "isPending": false,
-    "extends": ["AnatomicalStructure"]
-  },
-  "SubscribeAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "QualitativeValue": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "DataDownload": {
-    "isPending": false,
-    "extends": ["MediaObject"]
-  },
   "PaymentMethod": {
     "isPending": false,
     "extends": ["Intangible"]
-  },
-  "DiscussionForumPosting": {
-    "isPending": false,
-    "extends": ["SocialMediaPosting"]
-  },
-  "InviteAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "OrganizationRole": {
-    "isPending": false,
-    "extends": ["Role"]
-  },
-  "DDxElement": {
-    "isPending": false,
-    "extends": ["MedicalIntangible"]
-  },
-  "Ligament": {
-    "isPending": false,
-    "extends": ["AnatomicalStructure"]
-  },
-  "ComicSeries": {
-    "isPending": false,
-    "extends": ["Periodical"]
-  },
-  "Store": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "EmployerReview": {
-    "isPending": true,
-    "extends": ["Review"]
-  },
-  "GatedResidenceCommunity": {
-    "isPending": false,
-    "extends": ["Residence"]
-  },
-  "BusReservation": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "Season": {
-    "isPending": false,
-    "extends": ["CreativeWork"],
-    "supersededBy": "CreativeWorkSeason"
-  },
-  "EventSeries": {
-    "isPending": true,
-    "extends": ["Event", "Series"]
-  },
-  "BroadcastService": {
-    "isPending": false,
-    "extends": ["Service"]
-  },
-  "AllocateAction": {
-    "isPending": false,
-    "extends": ["OrganizeAction"]
-  },
-  "SpecialAnnouncement": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "MedicalGuideline": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "Plumber": {
-    "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
-  },
-  "Cooperative": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "Consortium": {
-    "isPending": true,
-    "extends": ["Organization"]
-  },
-  "BrainStructure": {
-    "isPending": false,
-    "extends": ["AnatomicalStructure"]
-  },
-  "Series": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "RVPark": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "RadioStation": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "MedicalRiskScore": {
-    "isPending": false,
-    "extends": ["MedicalRiskEstimator"]
-  },
-  "TaxiStand": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "FinancialProduct": {
-    "isPending": false,
-    "extends": ["Service"]
-  },
-  "AddAction": {
-    "isPending": false,
-    "extends": ["UpdateAction"]
-  },
-  "StructuredValue": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "MemberProgramTier": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "TypeAndQuantityNode": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "MortgageLoan": {
-    "isPending": true,
-    "extends": ["LoanOrCredit"]
-  },
-  "Airline": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "MedicalAudience": {
-    "isPending": false,
-    "extends": ["Audience", "PeopleAudience"]
-  },
-  "Reservation": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "JobPosting": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "DrugPrescriptionStatus": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "ReactAction": {
-    "isPending": false,
-    "extends": ["AssessAction"]
-  },
-  "WebApplication": {
-    "isPending": false,
-    "extends": ["SoftwareApplication"]
-  },
-  "WorkBasedProgram": {
-    "isPending": true,
-    "extends": ["EducationalOccupationalProgram"]
-  },
-  "SkiResort": {
-    "isPending": false,
-    "extends": ["SportsActivityLocation", "Resort"]
-  },
-  "BreadcrumbList": {
-    "isPending": false,
-    "extends": ["ItemList"]
-  },
-  "SelfStorage": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "PodcastSeries": {
-    "isPending": true,
-    "extends": ["CreativeWorkSeries"]
-  },
-  "AudioObject": {
-    "isPending": false,
-    "extends": ["MediaObject"]
-  },
-  "ProductModel": {
-    "isPending": false,
-    "extends": ["Product"]
-  },
-  "MedicalCondition": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "EventAttendanceModeEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "IndividualProduct": {
-    "isPending": false,
-    "extends": ["Product"]
-  },
-  "IceCreamShop": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "VisualArtwork": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "Florist": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "LodgingBusiness": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "DigitalPlatformEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "FinancialService": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "FlightReservation": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "Movie": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "Researcher": {
-    "isPending": false,
-    "extends": ["Audience"]
-  },
-  "DefinedTerm": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "Code": {
-    "isPending": false,
-    "extends": ["CreativeWork"],
-    "supersededBy": "SoftwareSourceCode"
-  },
-  "Beach": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "MovieClip": {
-    "isPending": false,
-    "extends": ["Clip"]
-  },
-  "OnlineMarketplace": {
-    "isPending": true,
-    "extends": ["OnlineStore"]
-  },
-  "ShippingService": {
-    "isPending": true,
-    "extends": ["StructuredValue"]
-  },
-  "Question": {
-    "isPending": false,
-    "extends": ["Comment"]
-  },
-  "HowToTool": {
-    "isPending": false,
-    "extends": ["HowToItem"]
-  },
-  "PerformingArtsTheater": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "CovidTestingFacility": {
-    "isPending": true,
-    "extends": ["MedicalClinic"]
-  },
-  "NewsMediaOrganization": {
-    "isPending": true,
-    "extends": ["Organization"]
-  },
-  "PreOrderAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "CafeOrCoffeeShop": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "URL": {
-    "isPending": false,
-    "extends": ["Text"]
-  },
-  "AutomatedTeller": {
-    "isPending": false,
-    "extends": ["FinancialService"]
-  },
-  "InternetCafe": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "Action": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "PetStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "InstantaneousEvent": {
-    "isPending": true,
-    "extends": ["StructuredValue"]
-  },
-  "OfficeEquipmentStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "XPathType": {
-    "isPending": true,
-    "extends": ["Text"]
-  },
-  "DeliveryMethod": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "Motel": {
-    "isPending": false,
-    "extends": ["LodgingBusiness"]
-  },
-  "OccupationalExperienceRequirements": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "AssessAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "MoveAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "EmergencyService": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "BioChemEntity": {
-    "isPending": true,
-    "extends": ["Thing"]
-  },
-  "PublicToilet": {
-    "isPending": true,
-    "extends": ["CivicStructure"]
-  },
-  "SteeringPositionValue": {
-    "isPending": false,
-    "extends": ["QualitativeValue"]
-  },
-  "AuthorizeAction": {
-    "isPending": false,
-    "extends": ["AllocateAction"]
-  },
-  "ProductReturnPolicy": {
-    "isPending": false,
-    "extends": ["Intangible"],
-    "supersededBy": "MerchantReturnPolicy"
-  },
-  "TradeAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "BroadcastChannel": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Trip": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "TieAction": {
-    "isPending": false,
-    "extends": ["AchieveAction"]
-  },
-  "GamePlayMode": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "DisagreeAction": {
-    "isPending": false,
-    "extends": ["ReactAction"]
-  },
-  "Enumeration": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Collection": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "ReturnMethodEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "AutoPartsStore": {
-    "isPending": false,
-    "extends": ["Store", "AutomotiveBusiness"]
-  },
-  "ArtGallery": {
-    "isPending": false,
-    "extends": ["EntertainmentBusiness"]
-  },
-  "OrderItem": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "EducationalOccupationalCredential": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "UserBlocks": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "NewsArticle": {
-    "isPending": false,
-    "extends": ["Article"]
-  },
-  "MediaReview": {
-    "isPending": true,
-    "extends": ["Review"]
-  },
-  "RadioBroadcastService": {
-    "isPending": true,
-    "extends": ["BroadcastService"]
-  },
-  "UseAction": {
-    "isPending": false,
-    "extends": ["ConsumeAction"]
-  },
-  "SurgicalProcedure": {
-    "isPending": false,
-    "extends": ["MedicalProcedure"]
-  },
-  "GovernmentService": {
-    "isPending": false,
-    "extends": ["Service"]
-  },
-  "Physician": {
-    "isPending": false,
-    "extends": ["MedicalOrganization", "MedicalBusiness"]
-  },
-  "Optician": {
-    "isPending": false,
-    "extends": ["MedicalBusiness"]
-  },
-  "SheetMusic": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "CreativeWorkSeries": {
-    "isPending": false,
-    "extends": ["Series", "CreativeWork"]
-  },
-  "LiquorStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "ChooseAction": {
-    "isPending": false,
-    "extends": ["AssessAction"]
-  },
-  "RestrictedDiet": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "Project": {
-    "isPending": true,
-    "extends": ["Organization"]
-  },
-  "HealthTopicContent": {
-    "isPending": true,
-    "extends": ["WebContent"]
-  },
-  "Bakery": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "Answer": {
-    "isPending": false,
-    "extends": ["Comment"]
-  },
-  "ShippingRateSettings": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "ItemPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "ChildCare": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "CssSelectorType": {
-    "isPending": true,
-    "extends": ["Text"]
-  },
-  "SizeSystemEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "Bridge": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "EducationalOrganization": {
-    "isPending": false,
-    "extends": ["Organization", "CivicStructure"]
-  },
-  "BusStation": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "RejectAction": {
-    "isPending": false,
-    "extends": ["AllocateAction"]
-  },
-  "Aquarium": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "AdvertiserContentArticle": {
-    "isPending": true,
-    "extends": ["Article"]
-  },
-  "CompoundPriceSpecification": {
-    "isPending": false,
-    "extends": ["PriceSpecification"]
-  },
-  "TrainTrip": {
-    "isPending": false,
-    "extends": ["Trip"]
-  },
-  "DepartAction": {
-    "isPending": false,
-    "extends": ["MoveAction"]
-  },
-  "ProgramMembership": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Brewery": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "Ticket": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "UserInteraction": {
-    "isPending": false,
-    "extends": ["Event"],
-    "supersededBy": "InteractionCounter"
-  },
-  "HousePainter": {
-    "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
-  },
-  "Report": {
-    "isPending": false,
-    "extends": ["Article"]
-  },
-  "DataFeed": {
-    "isPending": false,
-    "extends": ["Dataset"]
-  },
-  "PlaceOfWorship": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "Notary": {
-    "isPending": false,
-    "extends": ["LegalService"]
-  },
-  "WebSite": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
   },
   "LibrarySystem": {
     "isPending": true,
     "extends": ["Organization"]
   },
-  "CreativeWorkSeason": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "IncentiveType": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "AutomotiveBusiness": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "Vessel": {
+  "Ligament": {
     "isPending": false,
     "extends": ["AnatomicalStructure"]
   },
-  "DonateAction": {
+  "MedicalProcedure": {
     "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "LoseAction": {
-    "isPending": false,
-    "extends": ["AchieveAction"]
-  },
-  "OrganizeAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "PayAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "WearableMeasurementTypeEnumeration": {
-    "isPending": true,
-    "extends": ["MeasurementTypeEnumeration"]
-  },
-  "PodcastEpisode": {
-    "isPending": true,
-    "extends": ["Episode"]
-  },
-  "Time": {
-    "isPending": false
-  },
-  "Energy": {
-    "isPending": false,
-    "extends": ["Quantity"]
-  },
-  "Campground": {
-    "isPending": false,
-    "extends": ["CivicStructure", "LodgingBusiness"]
-  },
-  "Schedule": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "Hotel": {
-    "isPending": false,
-    "extends": ["LodgingBusiness"]
-  },
-  "FinancialIncentive": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "Claim": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "ParentAudience": {
-    "isPending": false,
-    "extends": ["PeopleAudience"]
-  },
-  "Clip": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "StupidType": {
-    "isPending": false,
-    "extends": ["Thing"]
-  },
-  "HowToItem": {
-    "isPending": false,
-    "extends": ["ListItem"]
-  },
-  "HomeAndConstructionBusiness": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "InformAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "CityHall": {
-    "isPending": false,
-    "extends": ["GovernmentBuilding"]
-  },
-  "VideoGallery": {
-    "isPending": false,
-    "extends": ["MediaGallery"]
-  },
-  "MusicVideoObject": {
-    "isPending": false,
-    "extends": ["MediaObject"]
-  },
-  "TierBenefitEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "BikeStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "MemberProgram": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "CorrectionComment": {
-    "isPending": true,
-    "extends": ["Comment"]
+    "extends": ["MedicalEntity"]
   },
   "TrainReservation": {
     "isPending": false,
     "extends": ["Reservation"]
   },
-  "MusicReleaseFormatType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "MusicVenue": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "LendAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "MusicAlbum": {
-    "isPending": false,
-    "extends": ["MusicPlaylist"]
-  },
-  "CreditCard": {
-    "isPending": false,
-    "extends": ["LoanOrCredit", "PaymentCard"]
-  },
-  "Vehicle": {
-    "isPending": false,
-    "extends": ["Product"]
-  },
-  "HyperTocEntry": {
+  "Quiz": {
     "isPending": true,
+    "extends": ["LearningResource"]
+  },
+  "CatholicChurch": {
+    "isPending": false,
+    "extends": ["Church"]
+  },
+  "AcceptAction": {
+    "isPending": false,
+    "extends": ["AllocateAction"]
+  },
+  "Thesis": {
+    "isPending": false,
     "extends": ["CreativeWork"]
   },
-  "Newspaper": {
+  "PhotographAction": {
     "isPending": false,
-    "extends": ["Periodical"]
+    "extends": ["CreateAction"]
   },
-  "MedicalOrganization": {
+  "MedicalGuidelineRecommendation": {
     "isPending": false,
-    "extends": ["Organization"]
+    "extends": ["MedicalGuideline"]
   },
-  "Accommodation": {
+  "HowToDirection": {
+    "isPending": false,
+    "extends": ["ListItem", "CreativeWork"]
+  },
+  "AdministrativeArea": {
     "isPending": false,
     "extends": ["Place"]
-  },
-  "MedicalTrialDesign": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "PalliativeProcedure": {
-    "isPending": false,
-    "extends": ["MedicalTherapy", "MedicalProcedure"]
-  },
-  "AlignmentObject": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "DepartmentStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "WebPageElement": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "MusicAlbumProductionType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "WebAPI": {
-    "isPending": true,
-    "extends": ["Service"]
-  },
-  "DislikeAction": {
-    "isPending": false,
-    "extends": ["ReactAction"]
-  },
-  "SportsEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "AutoRental": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "Electrician": {
-    "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
-  },
-  "Mosque": {
-    "isPending": false,
-    "extends": ["PlaceOfWorship"]
-  },
-  "MedicalProcedureType": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "RealEstateAgent": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "ImageObject": {
-    "isPending": false,
-    "extends": ["MediaObject"]
-  },
-  "Offer": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "MotorcycleRepair": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "MedicalEnumeration": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "HowToSupply": {
-    "isPending": false,
-    "extends": ["HowToItem"]
-  },
-  "HairSalon": {
-    "isPending": false,
-    "extends": ["HealthAndBeautyBusiness"]
-  },
-  "CategoryCodeSet": {
-    "isPending": true,
-    "extends": ["DefinedTermSet"]
-  },
-  "ArchiveComponent": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "Waterfall": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "LegislativeBuilding": {
-    "isPending": false,
-    "extends": ["GovernmentBuilding"]
-  },
-  "SatiricalArticle": {
-    "isPending": true,
-    "extends": ["Article"]
-  },
-  "ViewAction": {
-    "isPending": false,
-    "extends": ["ConsumeAction"]
-  },
-  "EUEnergyEfficiencyEnumeration": {
-    "isPending": true,
-    "extends": ["EnergyEfficiencyEnumeration"]
-  },
-  "FollowAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "AnatomicalStructure": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "TransferAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "PawnShop": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "AskAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "ImagingTest": {
-    "isPending": false,
-    "extends": ["MedicalTest"]
-  },
-  "AdultEntertainment": {
-    "isPending": false,
-    "extends": ["EntertainmentBusiness"]
   },
   "GeospatialGeometry": {
     "isPending": true,
     "extends": ["Intangible"]
   },
-  "ReviewAction": {
+  "BusTrip": {
     "isPending": false,
-    "extends": ["AssessAction"]
+    "extends": ["Trip"]
   },
-  "WebContent": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "Barcode": {
-    "isPending": false,
-    "extends": ["ImageObject"]
-  },
-  "ReceiveAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "Attorney": {
-    "isPending": false,
-    "extends": ["LegalService"]
-  },
-  "ElementarySchool": {
-    "isPending": false,
-    "extends": ["EducationalOrganization"]
-  },
-  "ExercisePlan": {
-    "isPending": false,
-    "extends": ["PhysicalActivity", "CreativeWork"]
-  },
-  "DrinkAction": {
-    "isPending": false,
-    "extends": ["ConsumeAction"]
-  },
-  "WPAdBlock": {
-    "isPending": false,
-    "extends": ["WebPageElement"]
-  },
-  "MonetaryAmountDistribution": {
-    "isPending": false,
-    "extends": ["QuantitativeValueDistribution"]
-  },
-  "ReportageNewsArticle": {
-    "isPending": true,
-    "extends": ["NewsArticle"]
-  },
-  "StatisticalPopulation": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "SizeGroupEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "Canal": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "ShoppingCenter": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "BoardingPolicyType": {
+  "BookFormatType": {
     "isPending": false,
     "extends": ["Enumeration"]
   },
-  "PropertyValue": {
-    "isPending": false,
+  "ExchangeRateSpecification": {
+    "isPending": true,
     "extends": ["StructuredValue"]
   },
-  "HVACBusiness": {
+  "BusOrCoach": {
     "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
+    "extends": ["Vehicle"]
   },
   "DaySpa": {
     "isPending": false,
     "extends": ["HealthAndBeautyBusiness"]
   },
-  "StatisticalVariable": {
+  "Car": {
+    "isPending": false,
+    "extends": ["Vehicle"]
+  },
+  "Event": {
+    "isPending": false,
+    "extends": ["Thing"]
+  },
+  "VisualArtwork": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "ArchiveOrganization": {
     "isPending": true,
-    "extends": ["ConstraintNode"]
+    "extends": ["LocalBusiness"]
   },
-  "InstallAction": {
+  "SubwayStation": {
     "isPending": false,
-    "extends": ["ConsumeAction"]
+    "extends": ["CivicStructure"]
   },
-  "DataType": {
+  "MusicPlaylist": {
     "isPending": false,
-    "extends": ["rdfs:Class"]
+    "extends": ["CreativeWork"]
+  },
+  "DanceEvent": {
+    "isPending": false,
+    "extends": ["Event"]
+  },
+  "DiagnosticProcedure": {
+    "isPending": false,
+    "extends": ["MedicalProcedure"]
+  },
+  "ActionAccessSpecification": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "VideoGameSeries": {
+    "isPending": false,
+    "extends": ["CreativeWorkSeries"]
+  },
+  "DataCatalog": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "PreOrderAction": {
+    "isPending": false,
+    "extends": ["TradeAction"]
+  },
+  "HyperToc": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "Integer": {
+    "isPending": false,
+    "extends": ["Number"]
+  },
+  "MusicReleaseFormatType": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "RegisterAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
+  },
+  "Hotel": {
+    "isPending": false,
+    "extends": ["LodgingBusiness"]
+  },
+  "PhysicalExam": {
+    "isPending": false,
+    "extends": ["MedicalProcedure", "MedicalEnumeration"]
+  },
+  "TextObject": {
+    "isPending": false,
+    "extends": ["MediaObject"]
+  },
+  "ITNonprofitType": {
+    "isPending": true,
+    "extends": ["NonprofitType"]
+  },
+  "CovidTestingFacility": {
+    "isPending": true,
+    "extends": ["MedicalClinic"]
+  },
+  "MedicalTrialDesign": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
   },
   "UserPlusOnes": {
     "isPending": false,
     "extends": ["UserInteraction"],
     "supersededBy": "InteractionCounter"
   },
-  "Property": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
   "DietarySupplement": {
     "isPending": false,
-    "extends": ["Substance", "Product"]
+    "extends": ["Product", "Substance"]
   },
-  "School": {
+  "DepartAction": {
     "isPending": false,
-    "extends": ["EducationalOrganization"]
-  },
-  "WearableSizeSystemEnumeration": {
-    "isPending": true,
-    "extends": ["SizeSystemEnumeration"]
-  },
-  "PodcastSeason": {
-    "isPending": true,
-    "extends": ["CreativeWorkSeason"]
-  },
-  "Float": {
-    "isPending": false,
-    "extends": ["Number"]
-  },
-  "Museum": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "Country": {
-    "isPending": false,
-    "extends": ["cmns-ge:GeopoliticalEntity", "AdministrativeArea"]
-  },
-  "MovieRentalStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "MaximumDoseSchedule": {
-    "isPending": false,
-    "extends": ["DoseSchedule"]
-  },
-  "Play": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "PublicationEvent": {
-    "isPending": false,
-    "extends": ["Event"]
+    "extends": ["MoveAction"]
   },
   "HomeGoodsStore": {
     "isPending": false,
     "extends": ["Store"]
   },
-  "Message": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "InteractionCounter": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "EmailMessage": {
-    "isPending": false,
-    "extends": ["Message"]
-  },
-  "BusOrCoach": {
-    "isPending": false,
-    "extends": ["Vehicle"]
-  },
-  "OccupationalTherapy": {
-    "isPending": false,
-    "extends": ["MedicalTherapy"]
-  },
-  "ClaimReview": {
-    "isPending": false,
-    "extends": ["Review"]
-  },
-  "MovieTheater": {
-    "isPending": false,
-    "extends": ["CivicStructure", "EntertainmentBusiness"]
-  },
-  "CommunicateAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "MusicGroup": {
-    "isPending": false,
-    "extends": ["PerformingGroup"]
-  },
-  "MusicAlbumReleaseType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "MedicalTherapy": {
-    "isPending": false,
-    "extends": ["TherapeuticProcedure"]
-  },
-  "MerchantReturnPolicy": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "Text": {
-    "isPending": false
-  },
-  "BodyMeasurementTypeEnumeration": {
-    "isPending": true,
-    "extends": ["MeasurementTypeEnumeration"]
-  },
-  "ComputerLanguage": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "FulfillmentTypeEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "InsertAction": {
-    "isPending": false,
-    "extends": ["AddAction"]
-  },
-  "VoteAction": {
-    "isPending": false,
-    "extends": ["ChooseAction"]
-  },
-  "CableOrSatelliteService": {
-    "isPending": false,
-    "extends": ["Service"]
-  },
-  "PerformingGroup": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "GameAvailabilityEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "BankAccount": {
-    "isPending": false,
-    "extends": ["FinancialProduct"]
-  },
-  "RadiationTherapy": {
-    "isPending": false,
-    "extends": ["MedicalTherapy"]
-  },
-  "Audiobook": {
-    "isPending": false,
-    "extends": ["AudioObject", "Book"]
-  },
-  "WinAction": {
-    "isPending": false,
-    "extends": ["AchieveAction"]
-  },
-  "MotorcycleDealer": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "SendAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "Menu": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "VideoObject": {
-    "isPending": false,
-    "extends": ["MediaObject"]
-  },
-  "ApartmentComplex": {
-    "isPending": false,
-    "extends": ["Residence"]
-  },
-  "ResumeAction": {
-    "isPending": false,
-    "extends": ["ControlAction"]
-  },
-  "Crematorium": {
+  "RVPark": {
     "isPending": false,
     "extends": ["CivicStructure"]
-  },
-  "UnRegisterAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "MedicalBusiness": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "Dataset": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "Gene": {
-    "isPending": true,
-    "extends": ["BioChemEntity"]
-  },
-  "IgnoreAction": {
-    "isPending": false,
-    "extends": ["AssessAction"]
-  },
-  "Restaurant": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "EatAction": {
-    "isPending": false,
-    "extends": ["ConsumeAction"]
-  },
-  "BoatTrip": {
-    "isPending": true,
-    "extends": ["Trip"]
-  },
-  "CheckoutPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "OutletStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "Residence": {
-    "isPending": false,
-    "extends": ["Place"]
-  },
-  "Specialty": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "Landform": {
-    "isPending": false,
-    "extends": ["Place"]
-  },
-  "ComedyClub": {
-    "isPending": false,
-    "extends": ["EntertainmentBusiness"]
-  },
-  "ArchiveOrganization": {
-    "isPending": true,
-    "extends": ["LocalBusiness"]
-  },
-  "DrugCostCategory": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "Hostel": {
-    "isPending": false,
-    "extends": ["LodgingBusiness"]
-  },
-  "AnatomicalSystem": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "Motorcycle": {
-    "isPending": false,
-    "extends": ["Vehicle"]
-  },
-  "ParcelDelivery": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "BlogPosting": {
-    "isPending": false,
-    "extends": ["SocialMediaPosting"]
-  },
-  "BookFormatType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "EventStatusType": {
-    "isPending": false,
-    "extends": ["StatusEnumeration"]
-  },
-  "BeautySalon": {
-    "isPending": false,
-    "extends": ["HealthAndBeautyBusiness"]
-  },
-  "DataCatalog": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "MedicalDevice": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "OrderStatus": {
-    "isPending": false,
-    "extends": ["StatusEnumeration"]
-  },
-  "ProfessionalService": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "HighSchool": {
-    "isPending": false,
-    "extends": ["EducationalOrganization"]
-  },
-  "PhotographAction": {
-    "isPending": false,
-    "extends": ["CreateAction"]
-  },
-  "TVEpisode": {
-    "isPending": false,
-    "extends": ["Episode"]
-  },
-  "ConstraintNode": {
-    "isPending": true,
-    "extends": ["Intangible"]
-  },
-  "RefundTypeEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "ApprovedIndication": {
-    "isPending": false,
-    "extends": ["MedicalIndication"]
-  },
-  "ReplyAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "ServiceChannel": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "DoseSchedule": {
-    "isPending": false,
-    "extends": ["MedicalIntangible"]
-  },
-  "InfectiousAgentClass": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "BankOrCreditUnion": {
-    "isPending": false,
-    "extends": ["FinancialService"]
-  },
-  "Festival": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "LegalService": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "VideoGame": {
-    "isPending": false,
-    "extends": ["SoftwareApplication", "Game"]
-  },
-  "MedicalDevicePurpose": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "RentalCarReservation": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "Role": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "PhysicalActivityCategory": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "Mountain": {
-    "isPending": false,
-    "extends": ["Landform"]
-  },
-  "UserReview": {
-    "isPending": true,
-    "extends": ["Review"]
-  },
-  "State": {
-    "isPending": false,
-    "extends": ["AdministrativeArea"]
-  },
-  "Synagogue": {
-    "isPending": false,
-    "extends": ["PlaceOfWorship"]
-  },
-  "LiteraryEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "GeoCircle": {
-    "isPending": false,
-    "extends": ["GeoShape"]
-  },
-  "Poster": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "Quantity": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Mass": {
-    "isPending": false,
-    "extends": ["Quantity"]
-  },
-  "EducationalAudience": {
-    "isPending": false,
-    "extends": ["Audience"]
-  },
-  "MolecularEntity": {
-    "isPending": true,
-    "extends": ["BioChemEntity"]
-  },
-  "Invoice": {
-    "isPending": false,
-    "extends": ["fibo-fnd-arr-doc:LegalDocument", "Intangible"]
-  },
-  "WriteAction": {
-    "isPending": false,
-    "extends": ["CreateAction"]
-  },
-  "GeneralContractor": {
-    "isPending": false,
-    "extends": ["HomeAndConstructionBusiness"]
-  },
-  "CarUsageType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "VideoGameClip": {
-    "isPending": false,
-    "extends": ["Clip"]
-  },
-  "DownloadAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
-  },
-  "ImageGallery": {
-    "isPending": false,
-    "extends": ["MediaGallery"]
-  },
-  "UserCheckins": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "EngineSpecification": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "PronounceableText": {
-    "isPending": true,
-    "extends": ["Text"]
-  },
-  "DigitalDocumentPermissionType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "Suite": {
-    "isPending": false,
-    "extends": ["Accommodation"]
-  },
-  "TelevisionChannel": {
-    "isPending": false,
-    "extends": ["BroadcastChannel"]
-  },
-  "ResearchOrganization": {
-    "isPending": true,
-    "extends": ["Organization"]
-  },
-  "CheckInAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "MedicalCause": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "BusinessFunction": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "SellAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "Blog": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "SaleEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "DriveWheelConfigurationValue": {
-    "isPending": false,
-    "extends": ["QualitativeValue"]
-  },
-  "PostOffice": {
-    "isPending": false,
-    "extends": ["GovernmentOffice"]
-  },
-  "CDCPMDRecord": {
-    "isPending": true,
-    "extends": ["StructuredValue"]
-  },
-  "MedicalRiskCalculator": {
-    "isPending": false,
-    "extends": ["MedicalRiskEstimator"]
-  },
-  "HowToTip": {
-    "isPending": false,
-    "extends": ["CreativeWork", "ListItem"]
-  },
-  "Recommendation": {
-    "isPending": true,
-    "extends": ["Review"]
-  },
-  "MedicalCode": {
-    "isPending": false,
-    "extends": ["MedicalIntangible", "CategoryCode"]
-  },
-  "LinkRole": {
-    "isPending": true,
-    "extends": ["Role"]
-  },
-  "PurchaseType": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "WorkersUnion": {
-    "isPending": false,
-    "extends": ["Organization"]
-  },
-  "SportingGoodsStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "BusinessEntityType": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "AutoDealer": {
-    "isPending": false,
-    "extends": ["AutomotiveBusiness"]
-  },
-  "ChildrensEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "MedicalProcedure": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "PhysicalExam": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration", "MedicalProcedure"]
-  },
-  "ReservationPackage": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "PhysicalTherapy": {
-    "isPending": false,
-    "extends": ["MedicalTherapy"]
-  },
-  "TechArticle": {
-    "isPending": false,
-    "extends": ["Article"]
-  },
-  "Brand": {
-    "isPending": false,
-    "extends": ["Intangible", "cmns-cls:Classifier"]
-  },
-  "Park": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "Preschool": {
-    "isPending": false,
-    "extends": ["EducationalOrganization"]
-  },
-  "MedicalRiskEstimator": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "OfferForLease": {
-    "isPending": true,
-    "extends": ["Offer"]
-  },
-  "CreateAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "MarryAction": {
-    "isPending": false,
-    "extends": ["InteractAction"]
-  },
-  "InvestmentFund": {
-    "isPending": true,
-    "extends": ["InvestmentOrDeposit"]
-  },
-  "RsvpAction": {
-    "isPending": false,
-    "extends": ["InformAction"]
-  },
-  "Thing": {
-    "isPending": false
-  },
-  "VeterinaryCare": {
-    "isPending": false,
-    "extends": ["MedicalOrganization"]
-  },
-  "Casino": {
-    "isPending": false,
-    "extends": ["EntertainmentBusiness"]
-  },
-  "EventReservation": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "GovernmentOffice": {
-    "isPending": false,
-    "extends": ["LocalBusiness"]
-  },
-  "HobbyShop": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "RecommendedDoseSchedule": {
-    "isPending": false,
-    "extends": ["DoseSchedule"]
-  },
-  "UserPlays": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "ShoeStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "HealthAspectEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "TennisComplex": {
-    "isPending": false,
-    "extends": ["SportsActivityLocation"]
-  },
-  "PsychologicalTreatment": {
-    "isPending": false,
-    "extends": ["TherapeuticProcedure"]
-  },
-  "RadioChannel": {
-    "isPending": false,
-    "extends": ["BroadcastChannel"]
-  },
-  "Dentist": {
-    "isPending": false,
-    "extends": ["LocalBusiness", "MedicalOrganization", "MedicalBusiness"]
-  },
-  "Review": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "MedicalEvidenceLevel": {
-    "isPending": false,
-    "extends": ["MedicalEnumeration"]
-  },
-  "TherapeuticProcedure": {
-    "isPending": false,
-    "extends": ["MedicalProcedure"]
-  },
-  "ResearchProject": {
-    "isPending": true,
-    "extends": ["Project"]
-  },
-  "CourseInstance": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "MedicalSpecialty": {
-    "isPending": false,
-    "extends": ["Specialty", "MedicalEnumeration"]
-  },
-  "BackgroundNewsArticle": {
-    "isPending": true,
-    "extends": ["NewsArticle"]
-  },
-  "MonetaryAmount": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "MobilePhoneStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "ActivateAction": {
-    "isPending": false,
-    "extends": ["ControlAction"]
-  },
-  "CheckOutAction": {
-    "isPending": false,
-    "extends": ["CommunicateAction"]
-  },
-  "HowToDirection": {
-    "isPending": false,
-    "extends": ["CreativeWork", "ListItem"]
-  },
-  "FoodService": {
-    "isPending": false,
-    "extends": ["Service"]
-  },
-  "Syllabus": {
-    "isPending": true,
-    "extends": ["LearningResource"]
-  },
-  "GovernmentBenefitsType": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "StadiumOrArena": {
-    "isPending": false,
-    "extends": ["CivicStructure", "SportsActivityLocation"]
-  },
-  "UserDownloads": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "MusicPlaylist": {
-    "isPending": false,
-    "extends": ["CreativeWork"]
-  },
-  "BodyOfWater": {
-    "isPending": false,
-    "extends": ["Landform"]
-  },
-  "Number": {
-    "isPending": false
-  },
-  "SearchAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "MusicEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "ReturnLabelSourceEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "Substance": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "OpinionNewsArticle": {
-    "isPending": true,
-    "extends": ["NewsArticle"]
-  },
-  "TouristTrip": {
-    "isPending": true,
-    "extends": ["Trip"]
-  },
-  "ContactPoint": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "MobileApplication": {
-    "isPending": false,
-    "extends": ["SoftwareApplication"]
-  },
-  "Statement": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "RepaymentSpecification": {
-    "isPending": true,
-    "extends": ["StructuredValue"]
-  },
-  "ReviewNewsArticle": {
-    "isPending": true,
-    "extends": ["NewsArticle", "CriticReview"]
-  },
-  "MedicalContraindication": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "WarrantyScope": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "DefinedTermSet": {
-    "isPending": true,
-    "extends": ["CreativeWork"]
-  },
-  "DatedMoneySpecification": {
-    "isPending": false,
-    "extends": ["StructuredValue"],
-    "supersededBy": "MonetaryAmount"
-  },
-  "MediaManipulationRatingEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "NailSalon": {
-    "isPending": false,
-    "extends": ["HealthAndBeautyBusiness"]
-  },
-  "LandmarksOrHistoricalBuildings": {
-    "isPending": false,
-    "extends": ["Place"]
-  },
-  "PaymentChargeSpecification": {
-    "isPending": false,
-    "extends": ["PriceSpecification"]
-  },
-  "MedicalGuidelineContraindication": {
-    "isPending": false,
-    "extends": ["MedicalGuideline"]
-  },
-  "Rating": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Pond": {
-    "isPending": false,
-    "extends": ["BodyOfWater"]
-  },
-  "LodgingReservation": {
-    "isPending": false,
-    "extends": ["Reservation"]
-  },
-  "TipAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "OwnershipInfo": {
-    "isPending": false,
-    "extends": ["StructuredValue"]
-  },
-  "PathologyTest": {
-    "isPending": false,
-    "extends": ["MedicalTest"]
-  },
-  "HardwareStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "MedicalClinic": {
-    "isPending": false,
-    "extends": ["MedicalOrganization", "MedicalBusiness"]
-  },
-  "ExerciseGym": {
-    "isPending": false,
-    "extends": ["SportsActivityLocation"]
-  },
-  "VisualArtsEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "MeasurementMethodEnum": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "LikeAction": {
-    "isPending": false,
-    "extends": ["ReactAction"]
-  },
-  "HinduTemple": {
-    "isPending": false,
-    "extends": ["PlaceOfWorship"]
-  },
-  "VitalSign": {
-    "isPending": false,
-    "extends": ["MedicalSign"]
-  },
-  "UKNonprofitType": {
-    "isPending": true,
-    "extends": ["NonprofitType"]
-  },
-  "ElectronicsStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "UserLikes": {
-    "isPending": false,
-    "extends": ["UserInteraction"],
-    "supersededBy": "InteractionCounter"
-  },
-  "PropertyValueSpecification": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "DanceEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "FindAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "HealthClub": {
-    "isPending": false,
-    "extends": ["HealthAndBeautyBusiness", "SportsActivityLocation"]
-  },
-  "DepositAccount": {
-    "isPending": false,
-    "extends": ["BankAccount", "InvestmentOrDeposit"]
-  },
-  "AskPublicNewsArticle": {
-    "isPending": true,
-    "extends": ["NewsArticle"]
-  },
-  "QuoteAction": {
-    "isPending": false,
-    "extends": ["TradeAction"]
-  },
-  "AMRadioChannel": {
-    "isPending": false,
-    "extends": ["RadioChannel"]
-  },
-  "AccountingService": {
-    "isPending": false,
-    "extends": ["FinancialService"]
-  },
-  "DeliveryTimeSettings": {
-    "isPending": false,
-    "extends": ["StructuredValue"],
-    "supersededBy": "ShippingConditions"
-  },
-  "BarOrPub": {
-    "isPending": false,
-    "extends": ["FoodEstablishment"]
-  },
-  "SearchResultsPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "Church": {
-    "isPending": false,
-    "extends": ["PlaceOfWorship"]
-  },
-  "VideoGameSeries": {
-    "isPending": false,
-    "extends": ["CreativeWorkSeries"]
-  },
-  "AdultOrientedEnumeration": {
-    "isPending": true,
-    "extends": ["Enumeration"]
-  },
-  "Periodical": {
-    "isPending": false,
-    "extends": ["CreativeWorkSeries"]
-  },
-  "IndividualPhysician": {
-    "isPending": false,
-    "extends": ["Physician"]
-  },
-  "WearAction": {
-    "isPending": false,
-    "extends": ["UseAction"]
-  },
-  "FoodEvent": {
-    "isPending": false,
-    "extends": ["Event"]
-  },
-  "MedicalTest": {
-    "isPending": false,
-    "extends": ["MedicalEntity"]
-  },
-  "PostalAddress": {
-    "isPending": false,
-    "extends": ["ContactPoint"]
-  },
-  "MedicalSymptom": {
-    "isPending": false,
-    "extends": ["MedicalSignOrSymptom"]
-  },
-  "FAQPage": {
-    "isPending": false,
-    "extends": ["WebPage"]
-  },
-  "TrackAction": {
-    "isPending": false,
-    "extends": ["FindAction"]
-  },
-  "GovernmentBuilding": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "Zoo": {
-    "isPending": false,
-    "extends": ["CivicStructure"]
-  },
-  "ConsumeAction": {
-    "isPending": false,
-    "extends": ["Action"]
-  },
-  "AudioObjectSnapshot": {
-    "isPending": true,
-    "extends": ["AudioObject"]
-  },
-  "ProductReturnEnumeration": {
-    "isPending": false,
-    "extends": ["Enumeration"],
-    "supersededBy": "MerchantReturnEnumeration"
-  },
-  "DayOfWeek": {
-    "isPending": false,
-    "extends": ["Enumeration"]
-  },
-  "OfferCatalog": {
-    "isPending": false,
-    "extends": ["ItemList"]
-  },
-  "Distance": {
-    "isPending": false,
-    "extends": ["Quantity"]
-  },
-  "BorrowAction": {
-    "isPending": false,
-    "extends": ["TransferAction"]
   },
   "Article": {
     "isPending": false,
     "extends": ["CreativeWork"]
   },
-  "ActionAccessSpecification": {
+  "BefriendAction": {
     "isPending": false,
-    "extends": ["Intangible"]
+    "extends": ["InteractAction"]
   },
-  "TouristAttraction": {
-    "isPending": false,
-    "extends": ["Place"]
+  "Time": {
+    "isPending": false
   },
-  "GroceryStore": {
-    "isPending": false,
-    "extends": ["Store"]
-  },
-  "EntryPoint": {
-    "isPending": false,
-    "extends": ["Intangible"]
-  },
-  "Thesis": {
+  "WebPageElement": {
     "isPending": false,
     "extends": ["CreativeWork"]
   },
-  "StatusEnumeration": {
+  "LakeBodyOfWater": {
+    "isPending": false,
+    "extends": ["BodyOfWater"]
+  },
+  "Beach": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Suite": {
+    "isPending": false,
+    "extends": ["Accommodation"]
+  },
+  "ReturnFeesEnumeration": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "TextDigitalDocument": {
+    "isPending": false,
+    "extends": ["DigitalDocument"]
+  },
+  "LearningResource": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "Comment": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "SubscribeAction": {
+    "isPending": false,
+    "extends": ["InteractAction"]
+  },
+  "HealthClub": {
+    "isPending": false,
+    "extends": ["HealthAndBeautyBusiness", "SportsActivityLocation"]
+  },
+  "CarUsageType": {
     "isPending": false,
     "extends": ["Enumeration"]
+  },
+  "NoteDigitalDocument": {
+    "isPending": false,
+    "extends": ["DigitalDocument"]
+  },
+  "MedicalIndication": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "Park": {
+    "isPending": false,
+    "extends": ["CivicStructure"]
+  },
+  "Syllabus": {
+    "isPending": true,
+    "extends": ["LearningResource"]
+  },
+  "MedicalStudyStatus": {
+    "isPending": false,
+    "extends": ["MedicalEnumeration"]
+  },
+  "RepaymentSpecification": {
+    "isPending": true,
+    "extends": ["StructuredValue"]
+  },
+  "DeactivateAction": {
+    "isPending": false,
+    "extends": ["ControlAction"]
+  },
+  "DeliveryChargeSpecification": {
+    "isPending": false,
+    "extends": ["PriceSpecification"]
+  },
+  "ClaimReview": {
+    "isPending": false,
+    "extends": ["Review"]
+  },
+  "MedicalCause": {
+    "isPending": false,
+    "extends": ["MedicalEntity"]
+  },
+  "PoliceStation": {
+    "isPending": false,
+    "extends": ["CivicStructure", "EmergencyService"]
   },
   "Nerve": {
     "isPending": false,
     "extends": ["AnatomicalStructure"]
   },
-  "MeetingRoom": {
+  "MusicEvent": {
     "isPending": false,
-    "extends": ["Room"]
+    "extends": ["Event"]
   },
-  "DataFeedItem": {
+  "ActivateAction": {
+    "isPending": false,
+    "extends": ["ControlAction"]
+  },
+  "MediaReviewItem": {
+    "isPending": true,
+    "extends": ["CreativeWork"]
+  },
+  "HowTo": {
+    "isPending": false,
+    "extends": ["CreativeWork"]
+  },
+  "CssSelectorType": {
+    "isPending": true,
+    "extends": ["Text"]
+  },
+  "EatAction": {
+    "isPending": false,
+    "extends": ["ConsumeAction"]
+  },
+  "BroadcastFrequencySpecification": {
     "isPending": false,
     "extends": ["Intangible"]
   },
-  "MusicStore": {
+  "EventStatusType": {
     "isPending": false,
-    "extends": ["Store"]
+    "extends": ["StatusEnumeration"]
   },
-  "ToyStore": {
+  "CancelAction": {
     "isPending": false,
-    "extends": ["Store"]
+    "extends": ["PlanAction"]
   },
-  "Muscle": {
+  "LiveBlogPosting": {
     "isPending": false,
-    "extends": ["AnatomicalStructure"]
+    "extends": ["BlogPosting"]
   },
-  "DrugPregnancyCategory": {
+  "UserInteraction": {
     "isPending": false,
-    "extends": ["MedicalEnumeration"]
+    "extends": ["Event"],
+    "supersededBy": "InteractionCounter"
   },
-  "OperatingSystem": {
+  "RadioEpisode": {
+    "isPending": false,
+    "extends": ["Episode"]
+  },
+  "SomeProducts": {
+    "isPending": false,
+    "extends": ["Product"]
+  },
+  "FAQPage": {
+    "isPending": false,
+    "extends": ["WebPage"]
+  },
+  "MedicalScholarlyArticle": {
+    "isPending": false,
+    "extends": ["ScholarlyArticle"]
+  },
+  "Occupation": {
+    "isPending": false,
+    "extends": ["Intangible"]
+  },
+  "MediaManipulationRatingEnumeration": {
     "isPending": true,
-    "extends": ["SoftwareApplication"]
+    "extends": ["Enumeration"]
   },
-  "JoinAction": {
+  "MedicalContraindication": {
     "isPending": false,
-    "extends": ["InteractAction"]
+    "extends": ["MedicalEntity"]
+  },
+  "TravelAgency": {
+    "isPending": false,
+    "extends": ["LocalBusiness"]
+  },
+  "DeliveryMethod": {
+    "isPending": false,
+    "extends": ["Enumeration"]
+  },
+  "HowToSection": {
+    "isPending": false,
+    "extends": ["CreativeWork", "ItemList", "ListItem"]
+  },
+  "EndorsementRating": {
+    "isPending": false,
+    "extends": ["Rating"]
+  },
+  "MusicAlbum": {
+    "isPending": false,
+    "extends": ["MusicPlaylist"]
+  },
+  "PawnShop": {
+    "isPending": false,
+    "extends": ["Store"]
+  },
+  "LendAction": {
+    "isPending": false,
+    "extends": ["TransferAction"]
+  },
+  "PaymentStatusType": {
+    "isPending": false,
+    "extends": ["StatusEnumeration"]
+  },
+  "GovernmentBenefitsType": {
+    "isPending": true,
+    "extends": ["Enumeration"]
+  },
+  "PhysicalTherapy": {
+    "isPending": false,
+    "extends": ["MedicalTherapy"]
+  },
+  "RsvpAction": {
+    "isPending": false,
+    "extends": ["InformAction"]
+  },
+  "InviteAction": {
+    "isPending": false,
+    "extends": ["CommunicateAction"]
+  },
+  "CreativeWorkSeries": {
+    "isPending": false,
+    "extends": ["Series", "CreativeWork"]
+  },
+  "RejectAction": {
+    "isPending": false,
+    "extends": ["AllocateAction"]
   }
 }
