@@ -44,3 +44,5 @@ export const AVAILABLE_CLI_FLAGS = {
     type: "boolean"
   }
 } as const;
+export const SCHEMA_ORG_URL_PATTERN = /ht{2}ps?:\/{2}schema\.org\/?/;
+export const SCHEMA_ORG_URL_EXTACT_PATTERN = new RegExp(`^${SCHEMA_ORG_URL_PATTERN.source}$`);

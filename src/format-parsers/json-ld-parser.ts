@@ -1,5 +1,7 @@
 import type { JSONLDData, SchemaGraph, SchemaNode, SchemaValue } from "../types.js";
 
+import { SCHEMA_ORG_URL_EXTACT_PATTERN } from "../constants.js";
+
 export class JSONLDParser {
   private readonly jsonLD: string;
 
@@ -94,7 +96,7 @@ export class JSONLDParser {
         node =>
           "@context" in node &&
           typeof node["@context"] === "string" &&
-          node["@context"].match(/^ht{2}ps?:\/{2}schema\.org\/?$/)
+          node["@context"].match(SCHEMA_ORG_URL_EXTACT_PATTERN)
       )
       .map(node => node as JSONLDData);
     const roots: SchemaNode[] = nodes.flatMap((value, index) => this.setSchemaNode(value, index));

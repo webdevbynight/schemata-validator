@@ -49,6 +49,9 @@
     "test:watch": "vitest",
     "tsc:watch": "tsc --watch --preserveWatchOutput"
   },
+  "dependencies": {
+    "parse5": "8.0.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "2.4.9",
     "@commitlint/cli": "20.5.0",
