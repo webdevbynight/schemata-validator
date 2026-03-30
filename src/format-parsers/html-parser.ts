@@ -1,8 +1,6 @@
 import type { DefaultTreeAdapterMap } from "parse5";
 import type { SchemaGraph, SchemaNode, SchemaValue } from "../types.js";
 
-import * as util from "node:util";
-
 import { parse as parse5 } from "parse5";
 
 import { JSONLDParser } from "./json-ld-parser.js";
@@ -221,9 +219,6 @@ export class HTMLParser {
       const nodes = this.getNodesWithMicrodataItem(rootNode);
       roots.push(...nodes.map(node => this.setSchemaNode(node)));
     }
-    console.group("HTMLParser");
-    console.log(util.inspect(roots, { depth: Number.POSITIVE_INFINITY }));
-    console.groupEnd();
     return {
       roots
     };
