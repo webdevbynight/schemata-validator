@@ -1,5 +1,15 @@
 # schemata-validator
 
+## 0.3.1
+
+### Patch changes
+
+- remove useless console logging ([`4660b81`](https://github.com/webdevbynight/schemata-validator/commit/4660b818fbfea24e7083ebf56041abc1788d17c7))
+
+---
+
+**Full changelog:** [`v0.3.0...v0.3.1`](https://github.com/webdevbynight/schemata-validator/compare/v0.3.0...v0.3.1)
+
 ## 0.3.0
 
 ### Minor changes
