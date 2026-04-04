@@ -1,6 +1,6 @@
 # schemata-validator
 
-Check the validity of Schema.org vocabulary used in JSON-LD data
+Check the validity of Schema.org vocabulary used in JSON-LD and HTML microdata
 
 ![License: MIT](https://img.shields.io/github/license/webdevbynight/schemata-validator)
 [![ESM-only package](https://img.shields.io/badge/package-ESM--only-ffe536)](https://nodejs.org/api/esm.html)
@@ -11,7 +11,7 @@ Check the validity of Schema.org vocabulary used in JSON-LD data
 ![Node support](https://img.shields.io/node/v/schemata-validator)
 ![Build status](https://img.shields.io/github/actions/workflow/status/webdevbynight/schemata-validator/run-tests.yml)
 
-**schemata-validator** takes JSON-LD and HTML files using JSON-LD data and returns detailed validation results.
+**schemata-validator** takes JSON-LD data and microdata in HTML and returns detailed validation results.
 
 ## Installation
 
@@ -87,8 +87,8 @@ You can run `schemata-validator` from the `scripts` section of your `package.jso
 
 #### Examples
 
-- `schemata-validator`: validates all HTML files using JSON-LD data in the project;
-- `schemata-validator --paths docs --exclude build tmp`: validates all HTML files using JSON-LD data in the `docs/` folder, except files which have `build` or `tmp` anywhere in their pathname or filename;
+- `schemata-validator`: validates all HTML files in the project;
+- `schemata-validator --paths docs --exclude build tmp`: validates all HTML files in the `docs/` folder, except files which have `build` or `tmp` anywhere in their pathname or filename;
 - `schemata-validator --files docs/index.html`: validates only the specified files.
 
 ### Application code
@@ -105,6 +105,15 @@ const jsonld = `{
   "description": "Web page description"
 }`;
 const options = { data: [jsonld] };
+const validator = new SchemataValidator(options);
+const validate = await validator.validate();
+validator.log(validate); // Outputs the reporting object
+```
+
+```js
+import { SchemataValidator } from "schemata-validator";
+
+const options = { paths: ["docs"] };
 const validator = new SchemataValidator(options);
 const validate = await validator.validate();
 validator.log(validate); // Outputs the reporting object
