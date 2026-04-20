@@ -53,7 +53,7 @@
     "tsc:watch": "tsc --watch --preserveWatchOutput"
   },
   "dependencies": {
-    "parse5": "8.0.0"
+    "parse5": "8.0.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.12",
