@@ -1,5 +1,15 @@
 # schemata-validator
 
+## 0.3.2
+
+### Patch changes
+
+- **deps:** update dependency parse5 to v8.0.1 (#34) ([`2a1b3d6`](https://github.com/webdevbynight/schemata-validator/commit/2a1b3d6a98c0869d1f0dc30ad29f49b362c0f8e0))
+
+---
+
+**Full changelog:** [`v0.3.1...v0.3.2`](https://github.com/webdevbynight/schemata-validator/compare/v0.3.1...v0.3.2)
+
 ## 0.3.1
 
 ### Patch changes
