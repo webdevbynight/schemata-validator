@@ -4,14 +4,15 @@ import { HTMLParser } from "../../src/format-parsers/html-parser.js";
 import { mockedHTMLFiles } from "./fixtures/mocked-html-files.js";
 import { mockedHtmlFilesWithInvalidJSONLDData } from "./fixtures/mocked-html-files-with-invalid-json-ld-data.js";
 
-it.each(
-  mockedHtmlFilesWithInvalidJSONLDData
-)("should throw an error if the HTML file has invalid JSON-LD data", input => {
-  expect(() => new HTMLParser(input).parse()).toThrow();
-});
-it.each(mockedHTMLFiles)("should return the intermediate representation tree", ({
-  input,
-  expectedTree
-}) => {
-  expect(new HTMLParser(input).parse()).toEqual(expectedTree);
-});
+it.each(mockedHtmlFilesWithInvalidJSONLDData)(
+  "should throw an error if the HTML file has invalid JSON-LD data",
+  input => {
+    expect(() => new HTMLParser(input).parse()).toThrow();
+  }
+);
+it.each(mockedHTMLFiles)(
+  "should return the intermediate representation tree",
+  ({ input, expectedTree }) => {
+    expect(new HTMLParser(input).parse()).toEqual(expectedTree);
+  }
+);
