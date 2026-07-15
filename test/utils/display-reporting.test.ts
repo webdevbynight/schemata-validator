@@ -26,50 +26,48 @@ afterEach(() => {
   vi.clearAllMocks();
 });
 
-describe.each(times)("at $expectedTime (timestamp $mockedTimestamp)", ({
-  mockedTimestamp,
-  expectedTime
-}) => {
-  it.each(mockedValidResultReporting)("should display a success reporting", ({
-    resource,
-    reporting,
-    logs
-  }) => {
-    displayReporting(reporting, mockedTimestamp);
-    expect(consoleGroupSpy).toHaveBeenCalledWith(`[${expectedTime}]`, workspaceName, resource);
-    expect(consoleInfoSpy).toHaveBeenCalledWith("\x1b[1;32m\u2714 pass\x1b[0m");
-    expect(consoleGroupEndSpy).toHaveBeenCalled();
-    if (reporting.result && logs) {
-      for (const log of logs) {
-        const { message, path, location } = log;
-        expect(consoleWarnSpy).toHaveBeenCalledWith("\x1b[1;33mWarning:\x1b[0m", message);
-        if (path) expect(consoleInfoSpy).toHaveBeenCalledWith(path);
-        if (location) expect(consoleInfoSpy).toHaveBeenCalledWith(location);
+describe.each(times)(
+  "at $expectedTime (timestamp $mockedTimestamp)",
+  ({ mockedTimestamp, expectedTime }) => {
+    it.each(mockedValidResultReporting)(
+      "should display a success reporting",
+      ({ resource, reporting, logs }) => {
+        displayReporting(reporting, mockedTimestamp);
+        expect(consoleGroupSpy).toHaveBeenCalledWith(`[${expectedTime}]`, workspaceName, resource);
+        expect(consoleInfoSpy).toHaveBeenCalledWith("\x1b[1;32m\u2714 pass\x1b[0m");
+        expect(consoleGroupEndSpy).toHaveBeenCalled();
+        if (reporting.result && logs) {
+          for (const log of logs) {
+            const { message, path, location } = log;
+            expect(consoleWarnSpy).toHaveBeenCalledWith("\x1b[1;33mWarning:\x1b[0m", message);
+            if (path) expect(consoleInfoSpy).toHaveBeenCalledWith(path);
+            if (location) expect(consoleInfoSpy).toHaveBeenCalledWith(location);
+          }
+        } else expect(consoleWarnSpy).not.toHaveBeenCalled();
+        expect(consoleErrorSpy).not.toHaveBeenCalled();
       }
-    } else expect(consoleWarnSpy).not.toHaveBeenCalled();
-    expect(consoleErrorSpy).not.toHaveBeenCalled();
-  });
-  it.each(mockedInvalidResultReporting)("should display a fail reporting", ({
-    resource,
-    reporting,
-    logs
-  }) => {
-    displayReporting(reporting, mockedTimestamp);
-    expect(consoleGroupSpy).toHaveBeenCalledWith(`[${expectedTime}]`, workspaceName, resource);
-    expect(consoleInfoSpy).toHaveBeenCalledWith(
-      "\x1b[1;31m\u2718 fail\x1b[0m",
-      `(messages: ${reporting.result?.length})`
     );
-    for (const log of logs) {
-      const { level, message, path, location } = log;
-      if (level === "Error") {
-        expect(consoleErrorSpy).toHaveBeenCalledWith(`\x1b[1;31m${level}:\x1b[0m`, message);
-      } else {
-        expect(consoleWarnSpy).toHaveBeenCalledWith(`\x1b[1;33m${level}:\x1b[0m`, message);
+    it.each(mockedInvalidResultReporting)(
+      "should display a fail reporting",
+      ({ resource, reporting, logs }) => {
+        displayReporting(reporting, mockedTimestamp);
+        expect(consoleGroupSpy).toHaveBeenCalledWith(`[${expectedTime}]`, workspaceName, resource);
+        expect(consoleInfoSpy).toHaveBeenCalledWith(
+          "\x1b[1;31m\u2718 fail\x1b[0m",
+          `(messages: ${reporting.result?.length})`
+        );
+        for (const log of logs) {
+          const { level, message, path, location } = log;
+          if (level === "Error") {
+            expect(consoleErrorSpy).toHaveBeenCalledWith(`\x1b[1;31m${level}:\x1b[0m`, message);
+          } else {
+            expect(consoleWarnSpy).toHaveBeenCalledWith(`\x1b[1;33m${level}:\x1b[0m`, message);
+          }
+          if (path) expect(consoleInfoSpy).toHaveBeenCalledWith(path);
+          if (location) expect(consoleInfoSpy).toHaveBeenCalledWith(location);
+        }
+        expect(consoleGroupEndSpy).toHaveBeenCalled();
       }
-      if (path) expect(consoleInfoSpy).toHaveBeenCalledWith(path);
-      if (location) expect(consoleInfoSpy).toHaveBeenCalledWith(location);
-    }
-    expect(consoleGroupEndSpy).toHaveBeenCalled();
-  });
-});
+    );
+  }
+);

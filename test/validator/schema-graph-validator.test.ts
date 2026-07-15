@@ -22,25 +22,27 @@ it.each(mockedClassExtensions)("should get all the classes %s extends", (classNa
   const schemaGraphValidator = new SchemaGraphValidator({ roots: [] });
   expect(schemaGraphValidator.getExtendedClasses(className)).toEqual(expected);
 });
-it.each(
-  mockedValidSchemaGraphs
-)("should return an empty array for schema graph %$", schemaGraph => {
-  const schemaGraphValidator = new SchemaGraphValidator(schemaGraph);
-  const result = schemaGraphValidator.validate();
-  expect(result).toEqual([]);
-});
-it.each(mockedInvalidSchemaGraphs)("should return an array of errors for schema graph %$", ({
-  schemaGraph,
-  expectedResult
-}) => {
-  const schemaGraphValidator = new SchemaGraphValidator(schemaGraph);
-  const result = schemaGraphValidator.validate();
-  expect(result).toEqual(expectedResult);
-});
-it.each(
-  mockedValidSchemaGraphsWithWarnings
-)("should return an array of warnings for schema graph %$", ({ schemaGraph, expectedResult }) => {
-  const schemaGraphValidator = new SchemaGraphValidator(schemaGraph);
-  const result = schemaGraphValidator.validate();
-  expect(result).toEqual(expectedResult);
-});
+it.each(mockedValidSchemaGraphs)(
+  "should return an empty array for schema graph %$",
+  schemaGraph => {
+    const schemaGraphValidator = new SchemaGraphValidator(schemaGraph);
+    const result = schemaGraphValidator.validate();
+    expect(result).toEqual([]);
+  }
+);
+it.each(mockedInvalidSchemaGraphs)(
+  "should return an array of errors for schema graph %$",
+  ({ schemaGraph, expectedResult }) => {
+    const schemaGraphValidator = new SchemaGraphValidator(schemaGraph);
+    const result = schemaGraphValidator.validate();
+    expect(result).toEqual(expectedResult);
+  }
+);
+it.each(mockedValidSchemaGraphsWithWarnings)(
+  "should return an array of warnings for schema graph %$",
+  ({ schemaGraph, expectedResult }) => {
+    const schemaGraphValidator = new SchemaGraphValidator(schemaGraph);
+    const result = schemaGraphValidator.validate();
+    expect(result).toEqual(expectedResult);
+  }
+);
