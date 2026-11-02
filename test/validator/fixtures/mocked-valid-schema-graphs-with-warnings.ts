@@ -8,17 +8,17 @@ export const mockedValidSchemaGraphsWithWarnings: {
     schemaGraph: {
       roots: [
         {
-          type: "AnalysisNewsArticle",
+          type: "ConferenceEvent",
           sourceFormat: "jsonld",
           location: { jsonLDPath: "[0]" },
           properties: new Map([
             [
-              "dateline",
+              "name",
               [
                 {
                   kind: "literal",
-                  location: { jsonLDPath: "[0].dateline[0]" },
-                  value: "Paris, France"
+                  location: { jsonLDPath: "[0].name[0]" },
+                  value: "Web Dev Event"
                 }
               ]
             ]
@@ -31,7 +31,7 @@ export const mockedValidSchemaGraphsWithWarnings: {
         type: "warning",
         path: "[0]",
         message:
-          "The type `AnalysisNewsArticle` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+          "The type `ConferenceEvent` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
       }
     ]
   },
@@ -39,7 +39,7 @@ export const mockedValidSchemaGraphsWithWarnings: {
     schemaGraph: {
       roots: [
         {
-          type: "Organization",
+          type: "Product",
           sourceFormat: "jsonld",
           location: { jsonLDPath: "[0]" },
           properties: new Map([
@@ -49,17 +49,17 @@ export const mockedValidSchemaGraphsWithWarnings: {
                 {
                   kind: "literal",
                   location: { jsonLDPath: "[0].name[0]" },
-                  value: "The Organisation"
+                  value: "Wine"
                 }
               ]
             ],
             [
-              "diversityPolicy",
+              "hasAdultConsideration",
               [
                 {
                   kind: "literal",
-                  location: { jsonLDPath: "[0].diversityPolicy[0]" },
-                  value: "https://example.com/diversity-policy"
+                  location: { jsonLDPath: "[0].hasAdultConsideration[0]" },
+                  value: "AlcoholConsideration"
                 }
               ]
             ]
@@ -70,9 +70,9 @@ export const mockedValidSchemaGraphsWithWarnings: {
     expectedResult: [
       {
         type: "warning",
-        path: "[0].diversityPolicy[0]",
+        path: "[0].hasAdultConsideration[0]",
         message:
-          "The property `diversityPolicy` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+          "The property `hasAdultConsideration` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
       }
     ]
   },
@@ -80,7 +80,7 @@ export const mockedValidSchemaGraphsWithWarnings: {
     schemaGraph: {
       roots: [
         {
-          type: "AnalysisNewsArticle",
+          type: "ConferenceEvent",
           sourceFormat: "microdata",
           location: {
             startLine: 8,
@@ -88,12 +88,12 @@ export const mockedValidSchemaGraphsWithWarnings: {
           },
           properties: new Map([
             [
-              "dateline",
+              "name",
               [
                 {
                   kind: "literal",
                   location: { startLine: 9, startColumn: 10 },
-                  value: "Paris, France"
+                  value: "Web Dev Event"
                 }
               ]
             ]
@@ -109,7 +109,7 @@ export const mockedValidSchemaGraphsWithWarnings: {
           column: 24
         },
         message:
-          "The type `AnalysisNewsArticle` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+          "The type `ConferenceEvent` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
       }
     ]
   },
@@ -117,7 +117,7 @@ export const mockedValidSchemaGraphsWithWarnings: {
     schemaGraph: {
       roots: [
         {
-          type: "Organization",
+          type: "Product",
           sourceFormat: "microdata",
           location: {
             startLine: 8,
@@ -130,17 +130,17 @@ export const mockedValidSchemaGraphsWithWarnings: {
                 {
                   kind: "literal",
                   location: { startLine: 9, startColumn: 11 },
-                  value: "The Organisation"
+                  value: "Wine"
                 }
               ]
             ],
             [
-              "diversityPolicy",
+              "hasAdultConsideration",
               [
                 {
                   kind: "literal",
                   location: { startLine: 10, startColumn: 38 },
-                  value: "https://example.com/diversity-policy"
+                  value: "AlcoholConsideration"
                 }
               ]
             ]
@@ -156,7 +156,7 @@ export const mockedValidSchemaGraphsWithWarnings: {
           column: 38
         },
         message:
-          "The property `diversityPolicy` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
+          "The property `hasAdultConsideration` is part of terms which are not yet part of the Schema.org vocabulary. Pending terms are subject to change and should be used with caution."
       }
     ]
   }
