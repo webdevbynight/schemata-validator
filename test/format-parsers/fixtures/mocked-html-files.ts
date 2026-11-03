@@ -819,5 +819,90 @@ export const mockedHTMLFiles: { input: string; expectedTree: SchemaGraph }[] = [
         }
       ]
     }
+  },
+  {
+    input: `<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Some document with microdata only</title>
+</head>
+<body>
+  <main id="content" itemscope itemtype="https://schema.org/Physician">
+    <h1 itemprop="owner" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Gregory House</span></h1>
+    <dl>
+      <dt>Hospital</dt>
+      <dd itemprop="hospitalAffiliation">Princeton-Plainsboro Teaching Hospital</dd>
+      <dt>Speciality</dt>
+      <dd itemprop="medicalSpecialty">Infectious</dd>
+    </dl>
+  </main>
+</body>
+</html>`,
+    expectedTree: {
+      roots: [
+        {
+          type: "Physician",
+          sourceFormat: "microdata",
+          location: {
+            startLine: 7,
+            startColumn: 32
+          },
+          properties: new Map([
+            [
+              "owner",
+              [
+                {
+                  kind: "node",
+                  linkLocation: {
+                    startLine: 8,
+                    startColumn: 9
+                  },
+                  node: {
+                    type: "Person",
+                    sourceFormat: "microdata",
+                    location: {
+                      startLine: 8,
+                      startColumn: 36
+                    },
+                    properties: new Map([
+                      [
+                        "name",
+                        [
+                          {
+                            kind: "literal",
+                            location: { startLine: 8, startColumn: 79 },
+                            value: "Gregory House"
+                          }
+                        ]
+                      ]
+                    ])
+                  }
+                }
+              ]
+            ],
+            [
+              "hospitalAffiliation",
+              [
+                {
+                  kind: "literal",
+                  location: { startLine: 11, startColumn: 11 },
+                  value: "Princeton-Plainsboro Teaching Hospital"
+                }
+              ]
+            ],
+            [
+              "medicalSpecialty",
+              [
+                {
+                  kind: "literal",
+                  location: { startLine: 13, startColumn: 11 },
+                  value: "Infectious"
+                }
+              ]
+            ]
+          ])
+        }
+      ]
+    }
   }
 ];

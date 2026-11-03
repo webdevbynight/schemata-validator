@@ -321,5 +321,76 @@ export const mockedJSONLDData: { input: string; expectedTree: SchemaGraph }[] = 
         }
       ]
     }
+  },
+  {
+    input: `{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "owner": {
+    "@type": "Person",
+    "name": "Gregory House"
+  },
+  "hospitalAffiliation": "Princeton-Plainsboro Teaching Hospital",
+  "medicalSpecialty": "Infectious"
+}`,
+    expectedTree: {
+      roots: [
+        {
+          type: "Physician",
+          sourceFormat: "jsonld",
+          location: {
+            jsonLDPath: "[0]"
+          },
+          properties: new Map([
+            [
+              "owner",
+              [
+                {
+                  kind: "node",
+                  linkLocation: { jsonLDPath: "[0].owner[0]" },
+                  node: {
+                    type: "Person",
+                    sourceFormat: "jsonld",
+                    location: { jsonLDPath: "[0].owner[0]" },
+                    properties: new Map([
+                      [
+                        "name",
+                        [
+                          {
+                            kind: "literal",
+                            location: { jsonLDPath: "[0].owner[0].name[0]" },
+                            value: "Gregory House"
+                          }
+                        ]
+                      ]
+                    ])
+                  }
+                }
+              ]
+            ],
+            [
+              "hospitalAffiliation",
+              [
+                {
+                  kind: "literal",
+                  location: { jsonLDPath: "[0].hospitalAffiliation[0]" },
+                  value: "Princeton-Plainsboro Teaching Hospital"
+                }
+              ]
+            ],
+            [
+              "medicalSpecialty",
+              [
+                {
+                  kind: "literal",
+                  location: { jsonLDPath: "[0].medicalSpecialty[0]" },
+                  value: "Infectious"
+                }
+              ]
+            ]
+          ])
+        }
+      ]
+    }
   }
 ];
