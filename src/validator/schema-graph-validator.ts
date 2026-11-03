@@ -71,6 +71,30 @@ export class SchemaGraphValidator {
   }
 
   /**
+   * Checks whether the type is an enumeration.
+   * @param type - The class type.
+   * @return `true` if the type is or extends `Enumeration`, `false` otherwise.
+   */
+  private isEnumeration(type: string): boolean {
+    return (
+      type === "Enumeration" || (this.getExtendedClasses(type)?.includes("Enumeration") ?? false)
+    );
+  }
+
+  /**
+   * Checks whether the member is one of the expected enumeration members.
+   * @param member - The member name.
+   * @param expectedMembers - The expected enumeration members.
+   * @return `true` if the member is a valid enumeration member, `false` otherwise.
+   * @private
+   */
+  private isValidEnumerationMember(member: string, expectedMembers: string[]): boolean {
+    const extendedClasses = this.getExtendedClasses(member);
+    if (!extendedClasses) return false;
+    return extendedClasses.some(className => expectedMembers.includes(className));
+  }
+
+  /**
    * Validates the schema values.
    * @param property - The property name.
    * @param schemaValues - The schema values to validate.
@@ -104,10 +128,10 @@ export class SchemaGraphValidator {
           if (htmlLocation) validationResult.location = htmlLocation;
           result.push(validationResult);
         }
+        const { type: typesInPropertyDefinition } = propertyDefinition;
         if (kind === "node") {
           const { node } = schemaValue;
           const { type } = node;
-          const { type: typesInPropertyDefinition } = propertyDefinition;
           const extendsTypes = this.getExtendedClasses(type)?.some(className =>
             typesInPropertyDefinition?.includes(className)
           );
@@ -121,6 +145,22 @@ export class SchemaGraphValidator {
             result.push(validationResult);
           }
           result.push(...this.validateNode(node));
+        } else {
+          const { value } = schemaValue;
+          if (
+            typesInPropertyDefinition?.length &&
+            typesInPropertyDefinition.every(type => this.isEnumeration(type))
+          ) {
+            if (!this.isValidEnumerationMember(value, typesInPropertyDefinition)) {
+              const validationResult: ValidationResult = {
+                type: "error",
+                message: `\`${value}\` is not a valid type for the property \`${property}\`.`
+              };
+              if (jsonLDPath) validationResult.path = jsonLDPath;
+              if (htmlLocation) validationResult.location = htmlLocation;
+              result.push(validationResult);
+            }
+          }
         }
       } else {
         const validationResult: ValidationResult = {
