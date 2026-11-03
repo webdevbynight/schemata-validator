@@ -1,5 +1,19 @@
 # schemata-validator
 
+## 0.4.0
+
+### Minor changes
+
+- update data with Schema.org v30.1 (now include enumeration members) ([`34d7fd8`](https://github.com/webdevbynight/schemata-validator/commit/34d7fd87149affa2025b9805da54b9182d2ced3c))
+
+### Patch changes
+
+- check values of properties extending enumeration are valid enumeration members ([`82ffc1f`](https://github.com/webdevbynight/schemata-validator/commit/82ffc1ff528e94389cbc1501d852560dcf28aaef))
+
+---
+
+**Full changelog:** [`v0.3.3...v0.4.0`](https://github.com/webdevbynight/schemata-validator/compare/v0.3.3...v0.4.0)
+
 ## 0.3.3
 
 ### Patch changes
