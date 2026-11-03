@@ -462,5 +462,130 @@ export const mockedValidSchemaGraphs: SchemaGraph[] = [
         ])
       }
     ]
+  },
+  {
+    roots: [
+      {
+        type: "Physician",
+        sourceFormat: "jsonld",
+        location: {
+          jsonLDPath: "[0]"
+        },
+        properties: new Map([
+          [
+            "owner",
+            [
+              {
+                kind: "node",
+                linkLocation: { jsonLDPath: "[0].owner[0]" },
+                node: {
+                  type: "Person",
+                  sourceFormat: "jsonld",
+                  location: { jsonLDPath: "[0].owner[0]" },
+                  properties: new Map([
+                    [
+                      "name",
+                      [
+                        {
+                          kind: "literal",
+                          location: { jsonLDPath: "[0].owner[0].name[0]" },
+                          value: "Gregory House"
+                        }
+                      ]
+                    ]
+                  ])
+                }
+              }
+            ]
+          ],
+          [
+            "hospitalAffiliation",
+            [
+              {
+                kind: "literal",
+                location: { jsonLDPath: "[0].hospitalAffiliation[0]" },
+                value: "Princeton-Plainsboro Teaching Hospital"
+              }
+            ]
+          ],
+          [
+            "medicalSpecialty",
+            [
+              {
+                kind: "literal",
+                location: { jsonLDPath: "[0].medicalSpecialty[0]" },
+                value: "Infectious"
+              }
+            ]
+          ]
+        ])
+      }
+    ]
+  },
+  {
+    roots: [
+      {
+        type: "Physician",
+        sourceFormat: "microdata",
+        location: {
+          startLine: 7,
+          startColumn: 32
+        },
+        properties: new Map([
+          [
+            "owner",
+            [
+              {
+                kind: "node",
+                linkLocation: {
+                  startLine: 8,
+                  startColumn: 9
+                },
+                node: {
+                  type: "Person",
+                  sourceFormat: "microdata",
+                  location: {
+                    startLine: 8,
+                    startColumn: 36
+                  },
+                  properties: new Map([
+                    [
+                      "name",
+                      [
+                        {
+                          kind: "literal",
+                          location: { startLine: 8, startColumn: 79 },
+                          value: "Gregory House"
+                        }
+                      ]
+                    ]
+                  ])
+                }
+              }
+            ]
+          ],
+          [
+            "hospitalAffiliation",
+            [
+              {
+                kind: "literal",
+                location: { startLine: 11, startColumn: 11 },
+                value: "Princeton-Plainsboro Teaching Hospital"
+              }
+            ]
+          ],
+          [
+            "medicalSpecialty",
+            [
+              {
+                kind: "literal",
+                location: { startLine: 13, startColumn: 11 },
+                value: "Infectious"
+              }
+            ]
+          ]
+        ])
+      }
+    ]
   }
 ];
