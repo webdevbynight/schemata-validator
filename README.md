@@ -16,10 +16,12 @@ Check the validity of Schema.org vocabulary used in JSON-LD and HTML microdata
 ## Installation
 
 Install package for Node.js:
+
 ```
 pnpm add --save-dev schemata-validator
 ```
 You can also install it using `npm`:
+
 ```
 npm install --save-dev schemata-validator
 ```
